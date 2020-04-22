@@ -1,55 +1,101 @@
-#signup{
-    width: 414px;
-    height: 736px;
-    font-family: Roboto;
+*{
+    margin: 0;
+}
+#content{
+    width: 100%;
 }
 
-.logo_cont{
-    text-align: center;
-}
-.logo_cont img{
-    padding: 76px 30px 0px 0px;
-}
-
-.input_cont{
-    text-align: center;
-}
-
-.input_cont form{
-    margin-top: 39px;
-}
-.input_cont form input{
-    height: 25px;
-    width: 338px;
-    margin: 0px 0px 6px 0px;
-    border: black solid;
-    font-size: 15px;
-    font-family: Roboto;
-}
-
-/*.boton_contra{
-    background-image: url(../img/boton_mostrar.png);
-    width: 22px !important;
-    border-left: none !important ;
-    background-repeat: no-repeat;
-}*/
-
-.input_cont form button{
-    background-color: #BBCC6D;
-    border: none;
-    color: white;
-    height: 40px;
-    width: 140px;
-    margin-top: 10px;
-    font-size: 26px;
+.oculto{
+    display: none;
 }
 
 
-.input_cont form p{
-    font-size: 16px;
-    margin-top: 14px;
+
+@media only screen and (max-width: 480px){
+    /*Registro*/
+    #signup{
+        width: 100%;
+        height: 736px;
+        font-family: Roboto;
+    }
+    
+    .logo_cont{
+        text-align: center;
+        width: 100%;
+    }
+    .logo_cont img{
+        padding: 76px 30px 0px 0px;
+    }
+    
+    .input_cont{
+        text-align: center;
+    }
+    
+    .input_cont form{
+        margin-top: 39px;
+    }
+    .input_cont form input{
+        height: 25px;
+        width: 80%;
+        margin: 0px 0px 6px 0px;
+        border: black solid;
+        font-size: 15px;
+        font-family: Roboto;
+    }
+    
+    /*.boton_contra{
+        background-image: url(../img/boton_mostrar.png);
+        width: 22px !important;
+        border-left: none !important ;
+        background-repeat: no-repeat;
+    }*/
+    
+    .input_cont form button{
+        background-color: #BBCC6D;
+        border: none;
+        color: white;
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    
+    
+    .input_cont form p{
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    
+    .input_cont form span{
+        color: #BBCC6D;
+    }
+
+    /*Logeo*/
+    #login{
+        width: 100%;
+        height: 736px;
+        font-family: Roboto;
+    }
+
+    #login .logo_cont img{
+        padding: 112px 30px 0px 0px !important;
+    }
+    #login .logo_cont h1{
+        position: absolute;
+        left: 34%;
+        font-size: 30px;
+        top: 48%;
+    }
+
+    
+    #login .input_cont form{
+        margin-top: 20px !important;
+    }
+    
 }
 
-.input_cont form span{
-    color: #BBCC6D;
+@media only screen and (max-width: 480px) and (max-height:580px){
+    .logo_cont img {
+        padding: 5px 30px 0px 0px !important;
+    }
 }

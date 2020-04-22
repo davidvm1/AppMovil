@@ -11,33 +11,55 @@
 </head>
 
 <body>
-    <section id="signup">
-        <div class="logo_cont">
-            <img src="img/logo_signup.png" alt="logo">
-            <br>
-        </div>
-        <div class="input_cont">
-            <form>
-                <input type="text" placeholder="Primer Nombre" required>
+    <div id="content">
+        <!--Signup-->
+        <section id="signup" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_signup.png" alt="logo">
                 <br>
-                <input type="text" placeholder="Primer Apellido" required>
-                <br>
-                <input type="text" placeholder="Correo Electrónico" required>
-                <br>
-                <input type="text" placeholder="Confirma Correo" required>
-                <br>
-                <input class="contrasena" type="password" placeholder="Contraseña" required>
-                <!--<input type="submit" class="boton_contra">-->
-                <br>
-                <input class="contrasena" type="password" placeholder="Confirma Contraseña" required>
-                <br>
-                <button type="submit">Iniciar</button>
-                <br>
-                <p>¿Ya tienes una cuenta? <span>Inicia sesión</span></p>
-            </form>
-        </div>
-    </section>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <input type="text" placeholder="Primer Nombre" required>
+                    <br>
+                    <input type="text" placeholder="Primer Apellido" required>
+                    <br>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <br>
+                    <input type="text" placeholder="Confirma Correo" required>
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Contraseña" required>
+                    <!--<input type="submit" class="boton_contra">-->
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Confirma Contraseña" required>
+                    <br>
+                    <button type="submit">Iniciar</button>
+                    <br>
+                    <p>¿Ya tienes una cuenta? <span>Inicia sesión</span></p>
+                </form>
+            </div>
+        </section>
+        <section id="login" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_login.png" alt="logo">
+                <h1>Bienvenido</h1>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <br>
+                    <input type="text" placeholder="Contraseña" required>
+                    <br>
+                    <p>¿Olvidaste tu contraseña? <span>Inicia sesión</span></p>
+                    <button type="submit">Iniciar</button>
+                </form>
+
+            </div>
+        </section>
+    </div>
+
 </body>
 <!--JS-->
 <script src="js/main js"></script>
+
 </html>
