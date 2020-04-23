@@ -91,6 +91,26 @@
     #login .input_cont form{
         margin-top: 20px !important;
     }
+
+    #recuperar .logo_cont h1{
+        font-size: 30px;
+        font-family: Roboto;
+    }
+
+    
+    #recuperar .logo_cont img{
+        padding-bottom: 50px;
+    }
+
+    #nueva_contra .logo_cont h1{
+        font-size: 30px;
+        font-family: Roboto;
+    }
+
+    
+    #nueva_contra .logo_cont img{
+        padding-bottom: 50px;
+    }
     
 }
 
