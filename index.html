@@ -69,7 +69,7 @@
                 </form>
             </div>
         </section>
-        <section id="nueva_contra">
+        <section id="nueva_contra" class="oculto">
             <div class="logo_cont">
                 <img src="img/logo_signup.png" alt="logo">
                 <h1>Restablecer <br>Contraseña</h1>
@@ -83,8 +83,71 @@
                 </form>
             </div>
         </section>
-    </div>
+        <section id="usuario" class="oculto">
+            <div class="logo_cont">
+                <img src="img/volver.png" id="btn_volver">
+                <img src="img/foto_perfil.png" alt="foto_perfil" id="foto_perfil">
+                <br>
+                <span>Cambiar foto</span>
+                <h1>Pepe Martinez</h1>
+                <br>
+                <span id="ampliar_cuenta">Ampliar información de mi cuenta</span>
+            </div>
+            <div class="input_cont">
+                <br>
+                <h2>Animales Adoptados</h2>
+                <br>
+                <br>
+                <div id="animales_usuario">
+                    <img src="img/manati.png">
+                    <img src="img/separador.png">
+                    <img src="img/delfin.png">
+                    <img src="img/separador.png">
+                    <img src="img/nutria.png">
+                </div>
+                <br>
+                <span>Usted es donador de tipo</span>
+                <h1>AMIGO</h1>
+                <button type="button">Más información sobre mi plan</button>
+                </div>
+            </div>
+        <section id="datos_personales" class="oculto">
+            <div id="volver_cont">
+                <img src="img/volver.png" id="btn_volver">
+            </div>
+            <div class="perfil_cont">
+                <img src="img/foto_perfil_menor.png" alt="logo" id="foto_perfil_menor">
+                <br>
+                <p>Tus Datos Personales</p>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <label for="pnombre">Primer Nombre</label><br>
+                    <input type="text" id="pnombre" placeholder="Primer Nombre" value="Pepe" required>
+                    <br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" placeholder="Primer Apellido" value="Martinez" required>
+                    <br>
+                    <label for="pais">Pais de residencia</label><br>
+                    <input type="text" id="pais" placeholder="Pais" value="Colombia" required>
+                    <br>
+                    <label for="correo">Correo registrado</label><br>
+                    <input type="text" id="correo" placeholder="Correo" value="pepethebest@yahoo.com" required>
+                    <br>
+                    <label for="contra">Cambiar contraseña</label><br>
+                    <input class="contrasena" id="contra" type="password" placeholder="Contraseña actual" required>
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Nueva contraseña" required>
+                    <br>
+                    <label for="fecha">Fecha de Nacimiento</label><br>
+                    <input id="fecha" type="date" placeholder="Fecha" required>
+                    <br>
+                    <button type="submit">Guardar cambios</button>
 
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 <!--JS-->
 <script src="js/main js"></script>

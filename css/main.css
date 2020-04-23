@@ -15,7 +15,7 @@
     /*Registro*/
     #signup{
         width: 100%;
-        height: 736px;
+        height: 100%px;
         font-family: Roboto;
     }
     
@@ -73,7 +73,7 @@
     /*Logeo*/
     #login{
         width: 100%;
-        height: 736px;
+        height: 100%;
         font-family: Roboto;
     }
 
@@ -110,6 +110,112 @@
     
     #nueva_contra .logo_cont img{
         padding-bottom: 50px;
+    }
+
+    #usuario{
+        width: 100%;
+        height: 100%;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    #foto_perfil{
+        padding: 63px 0px 0px 63px !important;
+    }
+
+    #usuario .logo_cont h1{
+        font-size: 39px;
+    }
+
+    #ampliar_cuenta{
+        color: #9CBC8F;
+        position: absolute;
+        top: 286px;
+        left: 60px;   
+    }
+
+    #usuario .input_cont h2{
+        position: absolute;
+        top: 322px;
+        left: 90px;
+        font-size: 19px;
+
+    }
+
+    #animales_usuario img{
+        height: 100%;
+        width: auto;
+    }
+
+
+    #animales_usuario{
+        height: 114px;
+        display: flex;
+        justify-content: center;
+    }
+    .input_cont h1{
+        font-size: 51px;
+        font-family: Roboto;
+    }
+
+    #usuario .input_cont button{
+        background-color: #BBCC6D;
+        border: none;
+        height: 33px;
+        width: 240px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #btn_volver{
+        float: right;
+        margin: 5%;
+        padding: 0!important;
+    }
+
+    #datos_personales{
+        width: 100%;
+        height: 100%;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    #foto_perfil_menor{
+        padding: 5% !important;
+        height: 100%;
+        width: auto;
+    }
+
+    .perfil_cont{
+        height: fit-content;
+        display: flex;
+        justify-content: left; ;
+    }
+    .perfil_cont p{
+        height: 100%;
+        width: auto;
+        font-size: 40px;
+        padding: 3%;
+    }
+
+    #volver_cont{
+        width: 100%;
+        height: 50px;
+    }
+
+    #datos_personales .input_cont form label{
+        float: left;
+        padding-left: 9%;
+    }
+    #datos_personales .input_cont form input{
+        border: black solid 1px;
+    }
+
+    #datos_personales .input_cont form button{
+        color: black;
+        font-size: 20px;
+        width: 205px;
+        height: 34px;
     }
     
 }
