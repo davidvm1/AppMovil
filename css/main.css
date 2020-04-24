@@ -1,6 +1,260 @@
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: OpenSerif;
+    src: url(OpenSerif-Book.ttf);
+}
+
+body{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
 }
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*CSS FELIPE*/
+
+#inicio{
+    overflow-x: hidden;    
+}
+
+#logoUser{
+    margin: 10px;
+    display: block;
+}
+
+#titulo{
+ font-size: 70px;
+  text-align: center;
+  color: black;
+    position: relative;
+  font-family: Openserif;
+}
+
+.texto p{
+    font-family: Roboto;
+    font-size: 23px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    margin-top: 70px;
+    list-style: none;
+    position: relative;
+    font-family: Roboto;
+}
+
+.lista{
+    text-align: center;
+}
+
+.lista a{
+    font-weight: bold;
+    font-size: 17px;
+    color: #83B692;
+}
+
+#delfinInicio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.botonAnimales{
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    border: none;
+    display: block;
+    position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+}
+
+#botonDelfin{
+    background: #A8CCC9;
+}
+
+#nutriaInicio{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    position: relative;
+    top: 50px;
+}
+
+#botonNutria{
+    background: #956D4F;
+    top: 50px;
+}
+
+#manatiInicio{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    position: relative;
+    top: 110px;
+}
+
+#botonManati{
+    background: #75929A;
+    top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #00898E;
+  border-radius: 10px;
+  transition: background .3s;
+}
+.btn:hover {
+  background: #00898E;
+}
+.popup {
+  position: fixed;
+  padding: 10px;
+  width: 180px;
+  height: 100%;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,.9);
+  visibility: hidden;
+  opacity: 0;
+  /* "delay" the visibility transition */
+  -webkit-transition: opacity .5s, visibility 0s linear .5s;
+  transition: opacity .5s, visibility 0s linear .5s;
+  z-index: 1;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.popup-close {
+  position: absolute;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,.9);
+}
+.popup .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+  color: #000;
+  transition: color .3s;
+  font-size: 2em;
+  line-height: .6em;
+  font-weight: bold;
+}
+.popup .close:hover {
+  color: #00E5EE;
+}
+
+.close-popup {
+  background: rgba(0,0,0,.7);
+  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s linear .5s;
+  transition: opacity .5s, visibility 0s linear .5s;
+}
+.popup:target + .close-popup {  
+  opacity: 0;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.botonAtras{
+    position:relative;
+    left: 85%;
+    margin-top: 20px;
+}
+
+#planesDeAdopcion{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    position: relative;
+    top: 100px;
+}    
+
+#textoPlanAdopcion{
+    color: black;
+    font-size: 24px;
+    position: relative;
+    top: 150px;
+}
+
+.botonAdopciones{
+     border-radius: 50px;
+    width: 70%;
+    height: 70px;
+    font-family: Roboto;
+    font-size: 35px;
+    color: white;
+    border: none;
+    display: block;
+    position: relative;
+    top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    margin-bottom: 80px;
+}
+
+#botonAmigo{
+    background: #B6E2C3;
+}
+
+#botonPatrocinador{
+    background: #99CDA8;
+}
+
+#botonGuardian{
+    background: #86B895;
+}
+
+#imagenes{
+    width: 100%;
+}
+
+/*-----------*/
+
 .header{
     height: 300px;
     width: 100%;
@@ -161,8 +415,37 @@ strong{
     .patrocinador .header p{
         font-size: 20px;
     }
-    
+    #titulo{
+        font-size: 50px;
+    }
+    .texto p{
+        font-size: 20px;;
+    }
+    .popup{
+        top: 50%;
+    }
+    #planesDeAdopcion{
+        font-size: 50px;
+    }
+    #textoPlanAdopcion{
+        font-size: 20px;
+    }
+    .botonAdopciones{
+    width: 55%;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 25px;
+    color: white;
+    border: none;
+    display: block;
+    position: relative;
+    top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    margin-bottom: 50px;
+    }
 }
+
 @media(min-width:321px){
     .campoForm{
         width: 300px;
@@ -187,7 +470,13 @@ strong{
         font-size: 23px;
         padding-top: 3%;
     }
-
+    .popup{
+        top: 50%;
+    }
+    .botonAtras{
+        left: 90%;
+        width: 50px;
+    }
 }
 ::placeholder{
     color:#AFD6A1;

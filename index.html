@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="content">
-        <seccion id="amiPlan">
+        <seccion id="amiPlan" class="oculto">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
                 <h1 class="tituloAmigo">Amigo</h1>           
@@ -32,7 +32,7 @@
                 <div class="btnAdquirir" onclick="cambiarSeccion(2);"><p>Adquirir plan</p></div>
             </div>       
         </seccion>
-        <seccion class="planes" id="pagarAmigo">
+        <seccion class="planes oculto" id="pagarAmigo">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Amigo              
@@ -55,7 +55,7 @@
             </div>
             
         </seccion>
-        <seccion class="planes" id="amiGracias">
+        <seccion class="planes oculto" id="amiGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Amigo              
@@ -65,7 +65,7 @@
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-        <seccion class="patrocinador" id="patrPlan">
+        <seccion class="patrocinador oculto" id="patrPlan">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
                 <h1 class="tituloAmigo">Patrocinador</h1>           
@@ -87,7 +87,7 @@
                 <div class="btnAdquirir" onclick="cambiarSeccion(5);"><p>Adquirir plan</p></div>
             </div>       
         </seccion>
-        <seccion class="planes patrocinador" id="pagarPatrocinador">
+        <seccion class="planes patrocinador oculto" id="pagarPatrocinador">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4);">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Patrocinador             
@@ -110,7 +110,7 @@
             </div>
             
         </seccion>
-        <seccion class="planes patrocinador" id="patrGracias">
+        <seccion class="planes patrocinador oculto" id="patrGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4)">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Patrocinador              
@@ -122,7 +122,7 @@
         </seccion>
         
     
-        <seccion class="guardian" id="guarPlan">
+        <seccion class="guardian oculto" id="guarPlan">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
                 <h1 class="tituloAmigo">Guardián</h1>           
@@ -142,7 +142,7 @@
                 <div class="btnAdquirir" onclick="cambiarSeccion(8);"><p>Adquirir plan</p></div>
             </div>       
         </seccion>
-        <seccion class="planes guardian" id="pagarGuardian">
+        <seccion class="planes guardian oculto" id="pagarGuardian">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7)">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Guardián             
@@ -166,7 +166,7 @@
             </div>
             
         </seccion>
-        <seccion class="planes guardian" id="guarGracias">
+        <seccion class="planes guardian oculto" id="guarGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7);">
                 <h1 class="tituloAmigo plnAmigo">Plan  <br> Guardián            
@@ -176,7 +176,7 @@
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-        <seccion id="seguimSeccion">
+        <seccion id="seguimSeccion" class="oculto">
             <div>
                 <img src="./img/Grupo 154.png" class="btnAtras">
                 <div class="imgsprincipal">
@@ -223,6 +223,49 @@
                 <p id="parrafo4"></p>
                 <p id="parrafo5"></p>
             </div>
+        </seccion>
+        
+        <seccion id="inicio" class="oculto">
+            <a href="#popup1"><input id="logoUser" type="image" src="img/Grupo%20175.png"></a>
+            <div id="popup1" class="popup">
+              <ul>
+                  <li class="lista"><a href="javascript:void(0);">Usuario</a></li>
+                  <li class="lista"><a href="javascript:void(0);">Seguimiento</a></li>
+                  <li class="lista"><a href="javascript:void(0);">Configuración</a></li>
+              </ul>
+            </div>
+            <a href="#" class="close-popup"></a>
+            
+            <p id="titulo">Arare</p>
+            
+             <div class="texto">
+                <p>Adopta simbólicamente y sigue a tu nuevo amigo.</p>
+                <p>¿A quién quieres conocer?</p>
+            </div>
+            <div id="imagenes">
+                <img src="img/delfinInicio.png" id="delfinInicio">
+                <button class="botonAnimales" id="botonDelfin">Delfín</button>
+
+                <img src="img/nutriaInicio.png" id="nutriaInicio">
+                <button class="botonAnimales" id="botonNutria">Nutria</button>
+
+                <img src="img/manati.png" id="manatiInicio">
+                <button class="botonAnimales" id="botonManati">Manatí</button>
+            </div>
+        </seccion>
+        
+        <seccion id="planesAdopcion" class="oculto">
+            <img src="./img/Componente%204%20%E2%80%93%201.png" class="botonAtras">
+             
+             <div>
+                 <p id="planesDeAdopcion">Planes de Adopción</p>
+                 
+                 <p id="textoPlanAdopcion">Conoce nuestros tres planes de adopción y cómo con cada uno de ellos ayudas a tu nuevo amigo.</p>
+             </div>
+             
+             <button id="botonAmigo" class="botonAdopciones">Amigo</button>
+             <button id="botonPatrocinador" class="botonAdopciones">Patrocinador</button>
+             <button id="botonGuardian" class="botonAdopciones">Guardian</button>
         </seccion>
     </div>
     
