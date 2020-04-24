@@ -1,7 +1,6 @@
 *{
     margin: 0;
 }
-
 .header{
     height: 300px;
     width: 100%;
@@ -9,6 +8,7 @@
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     opacity: 66%;
+    
 }
 .oculto {
 	display: none;
@@ -20,10 +20,10 @@
     bottom:0;
 }
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 #footer{
     height: 70px;
@@ -44,14 +44,36 @@ section{
     cursor: pointer;
     border-radius: 60%;
     background-image: url(../img/Home.png);
+
 }
-
-
+.tituloAmigo{
+    padding-top: 28%;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 69px;
+}
+.header p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    padding-top: 6%;
+}
 .btnAtras{
     float: right;
     margin: 5%;
 }
+.tituloBeneficio{
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 500;
+    font-size: 26px;
 
+}
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #707070; 
@@ -71,6 +93,131 @@ strong{
     box-sizing: border-box;
     display: block;
 }
+.btnAdquirir{
+    height: 53px;
+    width: 223px;
+    background-color: #BBCC6D;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.btnAdquirir p{
+    color: white;
+    font-size: 31px;
+}
+.contBtn{
+    padding: 10%;
+    text-align: -webkit-center;
+
+}
+.plnAmigo{
+    padding-top: 20% !important;
+}
+.gracias{
+    text-align: center;
+}
+.campoForm{
+    height: 43px;
+    border: solid;
+    border-color: #AFD6A1;
+    font-family: sans-serif;
+    font-size: 19px;
+    margin: 1%;
+    padding-left: 5px;
+}
+.planes h2{
+    color: #AFD6A1;
+    font-weight: normal;
+    font-family: sans-serif;
+    padding: 10%;
+    line-height: 1.3;
+    margin-left: 5%;
+}
+.guardian .header p{
+    font-size: 23px;
+    padding-top: 3%;
+}
+.patrocinador .header p{
+    font-size: 24px;
+    padding-top: 3%;
+}
+@media(max-width:320px){
+    .campoForm{
+        width: 260px;
+        font-size: 16px;
+    }
+    .planes h2{
+        font-size: 21px;
+    }
+    .header p{
+        font-size: 22px;
+    }
+    .btnAtras{
+        margin: 4%;
+    }
+    .guardian .header p{
+        font-size: 20px;
+    }
+    .patrocinador .header p{
+        font-size: 20px;
+    }
+    
+}
+@media(min-width:321px){
+    .campoForm{
+        width: 300px;
+    }
+    .planes h2{
+        font-size: 23px;
+    }
+    .guardian .header p{
+        font-size: 22px;
+        padding-top: 3%;
+    }
+    
+}
+@media(min-width:376px){
+    .campoForm{
+        width: 341px;
+    }
+    .planes h2{
+        font-size: 26px;
+    }
+    .guardian .header p{
+        font-size: 23px;
+        padding-top: 3%;
+    }
+
+}
+::placeholder{
+    color:#AFD6A1;
+}
+.formPagar{
+    text-align: center;
+}
+.patrocinador .header{
+    opacity: 100%;
+    background-image: url(../img/patron2.png);
+}
+.patrocinador .tituloAmigo{
+    font-size: 50px;
+}
+
+#pagarPatrocinador .tituloAmigo{
+    line-height: 54px;
+}
+#patrGracias .tituloAmigo{
+    line-height: 54px;
+}
+.guardian .header{
+    opacity: 100%;
+    background-color: #83B692;
+    background-image: url(../img/patron3.png);
+}
+.guardian .tituloAmigo{
+    font-size: 60px;
+}
+
 @media(max-height:640px){
     #content{
         height: 500px;  
@@ -165,8 +312,4 @@ strong{
 }
 .fondobtnnutria{
     background-color: #956D4F;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 70dc20874f50d36451ad33b9b62275e764f4edac
