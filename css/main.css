@@ -602,3 +602,69 @@ strong{
 .fondobtnnutria{
     background-color: #956D4F;
 }
+.descAnim p{
+    text-align: left;
+}
+.descGene{
+    text-align: justify !important;
+
+}
+.descAnim .btnAdquirir{
+    width: 263px;
+}
+.descAnim h3{
+    color: #83B692;
+    font-family: roboto;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 69px;
+}
+.imgAnimales{
+    width: 100%;
+}
+.imgAnimalesD{
+    padding: 5% 0;
+}
+.tiposAnim strong{
+    color: #83B692;
+    font-weight: normal;
+    font-size: 17px;
+}
+.tiposAnim{
+    text-align: center;
+}
+.headerAnimales{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.headerAnimales p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 35px;
+    line-height: 32px;
+}
+.tituloAnimales{
+    padding-top: 20%;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 68px;
+    font-weight: normal;
+    line-height: 69px;
+}
+.tituloNombreA{
+    color: #956D4F;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 69px;
+}
+#titdelfin{
+    color: #9AC2BD;
+}
+#titmanati{
+    color: #75929A;
+}
+
