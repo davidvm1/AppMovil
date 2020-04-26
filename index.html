@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,140 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
     <div id="content">
+        <!--Signup-->
+        <section id="signup" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_signup.png" alt="logo">
+                <br>
+            </div>
+            <div class="input_cont" class="oculto">
+                <form>
+                    <input type="text" placeholder="Nombre(s) y apellidos" required>
+                    <br>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <br>
+                    <input type="text" placeholder="Confirma Correo" required>
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Contraseña" required>
+                    <!--<input type="submit" class="boton_contra">-->
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Confirma Contraseña" required>
+                    <br>
+                    <button type="submit">Iniciar</button>
+                    <br>
+                </form>
+            </div>
+            <!--Login-->
+        </section>
+        <section id="login" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_login.png" alt="logo">
+                <h1>Bienvenido</h1>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <br>
+                    <input type="text" placeholder="Contraseña" required>
+                    <br>
+                    <p>¿Olvidaste tu contraseña? <span>Click aquí</span></p>
+                    <p>¿Todavía no tienes una cuenta? <span>Crear una cuenta</span></p>
+                    <button type="submit">Iniciar</button>
+                </form>
+
+            </div>
+        </section>
+        <!--Recuperacion clave-->
+        <section id="recuperar" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_signup.png" alt="logo">
+                <h1>Restablecer <br>Contraseña</h1>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <!--Cambio de clave-->
+        <section id="nueva_contra" class="oculto">
+            <div class="logo_cont">
+                <img src="img/logo_signup.png" alt="logo">
+                <h1>Restablecer <br>Contraseña</h1>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <input type="password" placeholder="Contraseña" required>
+                    <br>
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                    <button type="submit">Confirmar</button>
+                </form>
+            </div>
+        </section>
         <seccion id="amiPlan" class="oculto">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
-                <h1 class="tituloAmigo">Amigo</h1>           
+                <h1 class="tituloAmigo">Amigo</h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
 
             <h2 class="tituloBeneficio">Beneficios</h2>
             <p>- Imagenes en <strong> alta calidad </strong> de animales y paisajes del Amazonas.</p>
-            <p>- Diploma de <strong>acreditación como miembro</strong>  del programa.</p>
+            <p>- Diploma de <strong>acreditación como miembro</strong> del programa.</p>
             <p>- Certificado de <strong> donación.</strong></p>
-            <p>- Una <strong>publicación</strong>  sobre fauna o biodiverssidad.</p>
+            <p>- Una <strong>publicación</strong> sobre fauna o biodiverssidad.</p>
             <h2 class="tituloBeneficio">¿Cómo nos ayuda tu aporte?</h2>
-            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada</p>
-            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong>  de los animales liberados</p>
-            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats</p>
-            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación ambiental.</p>
-            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia ilegal</strong> de fauna en Colombia.</p>
+            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada
+            </p>
+            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong> de los animales liberados</p>
+            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats
+            </p>
+            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación
+                ambiental.</p>
+            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia
+                    ilegal</strong> de fauna en Colombia.</p>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(2);"><p>Adquirir plan</p></div>
-            </div>       
+                <div class="btnAdquirir" onclick="cambiarSeccion(2);">
+                    <p>Adquirir plan</p>
+                </div>
+            </div>
         </seccion>
         <seccion class="planes oculto" id="pagarAmigo">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Amigo              
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Amigo
+                </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
 
             <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
             <div class="formPagar">
-                <input  class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
+                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
                 <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname" placeholder="Tipo de cliente                                     ^">
+                <input type="text" class="campoForm" name="fname"
+                    placeholder="Tipo de cliente                                     ^">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
                 <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
             </div>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(3);"><p>Continuar</p></div>
+                <div class="btnAdquirir" onclick="cambiarSeccion(3);">
+                    <p>Continuar</p>
+                </div>
             </div>
-            
+
         </seccion>
         <seccion class="planes oculto" id="amiGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Amigo              
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Amigo
+                </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
             <h2 class="gracias">¡Gracias Pepe Martínez!
@@ -68,7 +151,7 @@
         <seccion class="patrocinador oculto" id="patrPlan">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
-                <h1 class="tituloAmigo">Patrocinador</h1>           
+                <h1 class="tituloAmigo">Patrocinador</h1>
                 <p class="precio">$850.000/ año (USD $275)</p>
             </div>
 
@@ -76,118 +159,136 @@
             <p>- Recibe el mismo paquete de la membresía <strong>AMIGO.</strong> </p>
             <p>- Un <strong>libro</strong> de colección.</p>
             <p>-<strong>Imagen</strong> a color de la especie, con la información respectiva.</p>
-            <p>- Hospedaje para <strong>dos personas</strong> (3 días/2 noches) en la Estación Biológica Fundación Omacha en Puerto Nariño (Amazonas) o en la Reserva Natural Bojonawi en Puerto Carreño (Vichada) para conocer los hermosos ecosistemas donde habitan estas especies y acompañar a los investigadores en una jornada de campo *(No incluye alimentación, transportes internacionales, nacionales y locales, ni otros gastos).</p>
+            <p>- Hospedaje para <strong>dos personas</strong> (3 días/2 noches) en la Estación Biológica Fundación
+                Omacha en Puerto Nariño (Amazonas) o en la Reserva Natural Bojonawi en Puerto Carreño (Vichada) para
+                conocer los hermosos ecosistemas donde habitan estas especies y acompañar a los investigadores en una
+                jornada de campo *(No incluye alimentación, transportes internacionales, nacionales y locales, ni otros
+                gastos).</p>
             <h2 class="tituloBeneficio">¿Cómo nos ayuda tu aporte?</h2>
-            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada</p>
-            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong>  de los animales liberados</p>
-            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats</p>
-            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación ambiental.</p>
-            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia ilegal</strong> de fauna en Colombia.</p>
+            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada
+            </p>
+            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong> de los animales liberados</p>
+            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats
+            </p>
+            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación
+                ambiental.</p>
+            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia
+                    ilegal</strong> de fauna en Colombia.</p>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(5);"><p>Adquirir plan</p></div>
-            </div>       
+                <div class="btnAdquirir" onclick="cambiarSeccion(5);">
+                    <p>Adquirir plan</p>
+                </div>
+            </div>
         </seccion>
         <seccion class="planes patrocinador oculto" id="pagarPatrocinador">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4);">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Patrocinador             
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Patrocinador
+                </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
 
             <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
             <div class="formPagar">
-                <input  class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
+                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
                 <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname" placeholder="Tipo de cliente                                     ^">
+                <input type="text" class="campoForm" name="fname"
+                    placeholder="Tipo de cliente                                     ^">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
                 <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
             </div>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(6);"><p>Continuar</p></div>
+                <div class="btnAdquirir" onclick="cambiarSeccion(6);">
+                    <p>Continuar</p>
+                </div>
             </div>
-            
+
         </seccion>
         <seccion class="planes patrocinador oculto" id="patrGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4)">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Patrocinador              
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Patrocinador
+                </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-        
-    
+
+
         <seccion class="guardian oculto" id="guarPlan">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras">
-                <h1 class="tituloAmigo">Guardián</h1>           
+                <h1 class="tituloAmigo">Guardián</h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
 
             <h2 class="tituloBeneficio">Beneficios</h2>
             <p>- Recibe el mismo paquete de las <strong>membresias anteriores </strong> </p>
-            <p>- Derecho a <strong> recibir todas las publicaciones </strong>strong lanzadas por la fundación durante 6 meses.</p>
+            <p>- Derecho a <strong> recibir todas las publicaciones </strong>strong lanzadas por la fundación durante 6
+                meses.</p>
             <h2 class="tituloBeneficio">¿Cómo nos ayuda tu aporte?</h2>
-            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada</p>
-            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong>  de los animales liberados</p>
-            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats</p>
-            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación ambiental.</p>
-            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia ilegal</strong> de fauna en Colombia.</p>
+            <p>- Con los gastos dentro del <strong> proceso de rehabilitación</strong> de fauna explotada y maltratada
+            </p>
+            <p>- Ayudas con el <strong>monitoreo y seguimiento</strong> de los animales liberados</p>
+            <p>- Con los diferentes <strong>procesos de investigación</strong> de las especies amenazadas y sus hábitats
+            </p>
+            <p>- Con la <strong> elaboración de material</strong> para los talleres de sensibilización y educación
+                ambiental.</p>
+            <p>- En la gestión corporativa e interinstitucional para la <strong>reducción del tráfico y la tenencia
+                    ilegal</strong> de fauna en Colombia.</p>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(8);"><p>Adquirir plan</p></div>
-            </div>       
+                <div class="btnAdquirir" onclick="cambiarSeccion(8);">
+                    <p>Adquirir plan</p>
+                </div>
+            </div>
         </seccion>
         <seccion class="planes guardian oculto" id="pagarGuardian">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7)">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Guardián             
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Guardián
+                </h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
-        
+
 
             <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
             <div class="formPagar">
-                <input  class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
+                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
                 <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname" placeholder="Tipo de cliente                                     ^">
+                <input type="text" class="campoForm" name="fname"
+                    placeholder="Tipo de cliente                                     ^">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
                 <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
                 <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
             </div>
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(9);"><p>Continuar</p></div>
+                <div class="btnAdquirir" onclick="cambiarSeccion(9);">
+                    <p>Continuar</p>
+                </div>
             </div>
-            
+
         </seccion>
         <seccion class="planes guardian oculto" id="guarGracias">
             <div class="header">
                 <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7);">
-                <h1 class="tituloAmigo plnAmigo">Plan  <br> Guardián            
-                </h1>           
+                <h1 class="tituloAmigo plnAmigo">Plan <br> Guardián
+                </h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-
-
-
-
-
-        <seccion id="seguimSeccion" class="">
-            <div class="menuFooter">  
-                <div class="footer">       
-                   <img src="img/Grupo%20165.png" class="logoMenuInicio">
-                   <img src="img/mapa.png" class="logoMapaInicio">
-                   <img src="img/usuario.png" class="logoUsuarioInicio">
-                </div> 
+        <seccion id="seguimSeccion" class="oculto">
+            <div class="menuFooter">
+                <div class="footer">
+                    <img src="img/Grupo%20165.png" class="logoMenuInicio">
+                    <img src="img/mapa.png" class="logoMapaInicio">
+                    <img src="img/usuario.png" class="logoUsuarioInicio">
+                </div>
             </div>
             <div id="contenido">
                 <div class="menuseguimiento">
@@ -205,7 +306,9 @@
                     </div>
                     <div class="parrafos">
                         <h1 class="tituloseg" id="titulo1"></h1>
-                        <p id="parrafo1">En este mapa podrás encontrar el seguimiento a estas 3 especies que puedes adoptar, te actualizaremos con la información actual de su hábitat, el número de especímenes que hemos podido registrar y el estado en que se encuentra sus reservas de comida.</p>
+                        <p id="parrafo1">En este mapa podrás encontrar el seguimiento a estas 3 especies que puedes
+                            adoptar, te actualizaremos con la información actual de su hábitat, el número de especímenes
+                            que hemos podido registrar y el estado en que se encuentra sus reservas de comida.</p>
                         <p id="parrafo2"></p>
                         <p id="parrafo3"></p>
                         <h1 class="tituloseg" id="titulo2"></h1>
@@ -219,23 +322,18 @@
                 </div>
             </div>
         </seccion>
-        
-
-
-
-
         <seccion id="inicio" class="oculto">
-            <div class="menuFooter">  
-                <div class="footer">       
-                   <img src="img/Grupo%20165.png" class="logoMenuInicio">
-                   <img src="img/mapa.png" class="logoMapaInicio">
-                   <img src="img/usuario.png" class="logoUsuarioInicio">
-                </div> 
-            </div> 
-            
+            <div class="menuFooter">
+                <div class="footer">
+                    <img src="img/Grupo%20165.png" class="logoMenuInicio">
+                    <img src="img/mapa.png" class="logoMapaInicio">
+                    <img src="img/usuario.png" class="logoUsuarioInicio">
+                </div>
+            </div>
+
             <p id="titulo">Arare</p>
-            
-             <div class="texto">
+
+            <div class="texto">
                 <p>Adopta simbólicamente y sigue a tu nuevo amigo.</p>
                 <p id="conocer">¿A quién quieres conocer?</p>
             </div>
@@ -250,31 +348,103 @@
                 <button class="botonAnimales" id="botonManati">Manatí</button>
             </div>
         </seccion>
-        
+
+        <!--Perfil de usuario-->
+        <section id="usuario" class="oculto">
+            <div class="logo_cont">
+                <img src="img/volver.png" id="btn_volver">
+                <img src="img/foto_perfil.png" alt="foto_perfil" id="foto_perfil">
+                <br>
+                <span>Cambiar foto</span>
+                <h1>Pepe Martinez</h1>
+                <br>
+                <a href="" class="hipervinculo" id="ampliar_cuenta">Ampliar información de mi cuenta</a>
+            </div>
+            <div class="input_cont">
+                <br>
+                <h2>Animales Adoptados</h2>
+                <br>
+                <br>
+                <div id="animales_usuario">
+                    <img src="img/manati_usuario.png">
+                    <img src="img/separador.png">
+                    <img src="img/delfin_usuario.png">
+                    <img src="img/separador.png">
+                    <img src="img/nutria._usuario.png">
+                </div>
+                <br>
+                <span>Usted es donador de tipo</span>
+                <h1>AMIGO</h1>
+                <button type="button">Más información sobre mi plan</button>
+                <br>
+                <br>
+                <a class="hipervinculo" href="">Cerrar sesión</a>
+            </div>
+        </section>
+
+        <!--Ampliacion de datos personales-->
+        <section id="datos_personales">
+            <div id="volver_cont">
+                <img src="img/volver.png" id="btn_volver">
+            </div>
+            <div class="perfil_cont">
+                <img src="img/foto_perfil_menor.png" alt="logo" id="foto_perfil_menor">
+                <br>
+                <p>Tus Datos Personales</p>
+            </div>
+            <div class="input_cont">
+                <form>
+                    <label for="pnombre">Primer Nombre</label><br>
+                    <input type="text" id="pnombre" placeholder="Primer Nombre" value="Pepe" required>
+                    <br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" placeholder="Primer Apellido" value="Martinez" required>
+                    <br>
+                    <label for="pais">Pais de residencia</label><br>
+                    <input type="text" id="pais" placeholder="Pais" value="Colombia" required>
+                    <br>
+                    <label for="correo">Correo registrado</label><br>
+                    <input type="text" id="correo" placeholder="Correo" value="pepethebest@yahoo.com" required>
+                    <br>
+                    <label for="contra">Cambiar contraseña</label><br>
+                    <input class="contrasena" id="contra" type="password" placeholder="Contraseña actual" required>
+                    <br>
+                    <input class="contrasena" type="password" placeholder="Nueva contraseña" required>
+                    <br>
+                    <label for="fecha">Fecha de Nacimiento</label><br>
+                    <input id="fecha" type="date" placeholder="Fecha" required>
+                    <br>
+                    <button type="submit">Guardar cambios</button>
+    
+                </form>
+            </div>
+        </section>
+
         <seccion id="planesAdopcion" class="oculto">
-            <div class="menuFooter">  
-                <div class="footer">       
-                   <img src="img/Grupo%20165-blanco.png" class="logoMenuInicio">
-                   <img src="img/mapa.png" class="logoMapaInicio">
-                   <img src="img/usuario.png" class="logoUsuarioInicio">
-                </div> 
-            </div> 
-             
-             <div>
-                 <p id="planesDeAdopcion">Planes de Adopción</p>
-                 
-                 <p id="textoPlanAdopcion">Conoce nuestros tres planes de adopción y cómo con cada uno de ellos ayudas a tu nuevo amigo.</p>
-             </div>
-             
-             <button id="botonAmigo" class="botonAdopciones">Amigo</button>
-             <button id="botonPatrocinador" class="botonAdopciones">Patrocinador</button>
-             <button id="botonGuardian" class="botonAdopciones">Guardian</button>
+            <div class="menuFooter">
+                <div class="footer">
+                    <img src="img/Grupo%20165-blanco.png" class="logoMenuInicio">
+                    <img src="img/mapa.png" class="logoMapaInicio">
+                    <img src="img/usuario.png" class="logoUsuarioInicio">
+                </div>
+            </div>
+
+            <div>
+                <p id="planesDeAdopcion">Planes de Adopción</p>
+
+                <p id="textoPlanAdopcion">Conoce nuestros tres planes de adopción y cómo con cada uno de ellos ayudas a
+                    tu nuevo amigo.</p>
+            </div>
+
+            <button id="botonAmigo" class="botonAdopciones">Amigo</button>
+            <button id="botonPatrocinador" class="botonAdopciones">Patrocinador</button>
+            <button id="botonGuardian" class="botonAdopciones">Guardian</button>
         </seccion>
         <seccion id="nutria" class="tiposAnim oculto">
             <div class="headerAnimales">
-                    <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
-                    <h1 class="tituloAnimales">Adopta</h1>
-                    <p class="precio">un animal</p>              
+                <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
+                <h1 class="tituloAnimales">Adopta</h1>
+                <p class="precio">un animal</p>
             </div>
             <div>
                 <img src="./img/nutriablanco.png" class="imgAnimales">
@@ -282,38 +452,58 @@
             <div class="descAnim">
                 <h2 class="tituloNombreA ">Nutria</h2>
                 <p><strong>Nombre científico:</strong> Pteronura brasiliensis<br>
-                <strong>Orden:</strong> Carnivora<br>
-                <strong>Familia:</strong> Mustelidae</p>
+                    <strong>Orden:</strong> Carnivora<br>
+                    <strong>Familia:</strong> Mustelidae</p>
                 <h3>Descripción General</h3>
-                <p class="descGene">La nutria gigante mide entre 1.5 y 2 metros, de los cuales 45 a 65 centímetros corresponden a la cola, la cual es aplanada hacia la punta. Pueden pesar entre 25 y 32 kilos. Su pelaje es de color café oscuro y
-                     tiene manchas de color claro amarillento en el cuello, con un patrón único por cada individuo lo cual sirve para identificarlos. Estas manchas son más grandes  en los machos. Los dedos de las manos y pies están unidos  por 
-                     una membrana. Sus ojos son grandes, de color café oscuro y el hocico es redondeado.</p>
+                <p class="descGene">La nutria gigante mide entre 1.5 y 2 metros, de los cuales 45 a 65 centímetros
+                    corresponden a la cola, la cual es aplanada hacia la punta. Pueden pesar entre 25 y 32 kilos. Su
+                    pelaje es de color café oscuro y
+                    tiene manchas de color claro amarillento en el cuello, con un patrón único por cada individuo lo
+                    cual sirve para identificarlos. Estas manchas son más grandes en los machos. Los dedos de las manos
+                    y pies están unidos por
+                    una membrana. Sus ojos son grandes, de color café oscuro y el hocico es redondeado.</p>
                 <img src="./img/nutria gigante.png" class="imgAnimales">
                 <p> <strong>1. </strong>Ojos grandes color café oscuro </p>
-                <p><strong>2. </strong>Hocico redondeado </p>  
-                <p><strong>3. </strong>Manchas color claro amarillento patrón único por cada individuo para identificarlos</p>   
-                <p><strong>4. </strong>Dedos de las manos y pies unidos por una membrana</p>   
-                <p><strong>5. </strong>Cola aplanada hacia la punta</p>    
+                <p><strong>2. </strong>Hocico redondeado </p>
+                <p><strong>3. </strong>Manchas color claro amarillento patrón único por cada individuo para
+                    identificarlos</p>
+                <p><strong>4. </strong>Dedos de las manos y pies unidos por una membrana</p>
+                <p><strong>5. </strong>Cola aplanada hacia la punta</p>
                 <h3>Distribución</h3>
-                <p class="descGene">En <strong>Colombia</strong> existe evidencia de su presencia en la mayoría de departamentos de la Amazonia y el <strong>Orinoco:</strong> en los ríos Tomo y Tuparro del PNN El Tuparro, en los ríos Bita y Orinoco, la parte media del río Meta y en el río Arauca.</p>
-                <p class="descGene">Se han logrado observaciones en los ríos Caquetá, Cahuinarí, Bernardo, Mirití y Apaporis. Se han observado grupos en los ríos Inírida y Guaviare y se han visto algunos individuos en la zona de inundación de los lagos Tarapoto y el río Loreto Yacu.</p>
+                <p class="descGene">En <strong>Colombia</strong> existe evidencia de su presencia en la mayoría de
+                    departamentos de la Amazonia y el <strong>Orinoco:</strong> en los ríos Tomo y Tuparro del PNN El
+                    Tuparro, en los ríos Bita y Orinoco, la parte media del río Meta y en el río Arauca.</p>
+                <p class="descGene">Se han logrado observaciones en los ríos Caquetá, Cahuinarí, Bernardo, Mirití y
+                    Apaporis. Se han observado grupos en los ríos Inírida y Guaviare y se han visto algunos individuos
+                    en la zona de inundación de los lagos Tarapoto y el río Loreto Yacu.</p>
                 <h3>Hábitat</h3>
-                <p class="descGene">Se encuentra, generalmente, en pequeños tributarios y sistemas lagunares de aguas negras. En la <strong>Orinoquia</strong> se le ha visto en los ríos de aguas blancas, como el Orinoco y el Meta.</p>
+                <p class="descGene">Se encuentra, generalmente, en pequeños tributarios y sistemas lagunares de aguas
+                    negras. En la <strong>Orinoquia</strong> se le ha visto en los ríos de aguas blancas, como el
+                    Orinoco y el Meta.</p>
                 <h3>Amenazas</h3>
-                <p class="descGene">Las nutrias fueron cazadas intensamente para el comercio internacional de pieles, entre 1940 y 1970, esto se menciona como la causa más importante de la gran disminución de la especie.</p>
-                <p class="descGene">En algunas regiones, como el río Mirití Parana y la parte media del río Meta, los pescadores consideran a las nutrias como una seria competencia por el recurso pesquero. </p>
-                <p class="descGene">En el departamento del Vichada se presenta el mercado ilegal de venta de crías como mascotas. En la Selva Mataven, al sur del Vichada, y en el bajo río Inirida, Guainía, la especie enfrenta una amenaza directa por parte de las comunidades indígenas de la zona: se afirma que las nutrias gigantes son un enemigo ya que comen demasiado pescado y ensucian las aguas de los ríos y caños con sus heces.</p>
+                <p class="descGene">Las nutrias fueron cazadas intensamente para el comercio internacional de pieles,
+                    entre 1940 y 1970, esto se menciona como la causa más importante de la gran disminución de la
+                    especie.</p>
+                <p class="descGene">En algunas regiones, como el río Mirití Parana y la parte media del río Meta, los
+                    pescadores consideran a las nutrias como una seria competencia por el recurso pesquero. </p>
+                <p class="descGene">En el departamento del Vichada se presenta el mercado ilegal de venta de crías como
+                    mascotas. En la Selva Mataven, al sur del Vichada, y en el bajo río Inirida, Guainía, la especie
+                    enfrenta una amenaza directa por parte de las comunidades indígenas de la zona: se afirma que las
+                    nutrias gigantes son un enemigo ya que comen demasiado pescado y ensucian las aguas de los ríos y
+                    caños con sus heces.</p>
                 <div class="contBtn">
-                    <div class="btnAdquirir" onclick="cambiarSeccion(9);"><p>Quiero adoptar</p></div>
+                    <div class="btnAdquirir" onclick="cambiarSeccion(9);">
+                        <p>Quiero adoptar</p>
+                    </div>
                 </div>
             </div>
-       
+
         </seccion>
         <seccion id="manati" class="tiposAnim oculto">
             <div class="headerAnimales">
-                    <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
-                    <h1 class="tituloAnimales">Adopta</h1>
-                    <p class="precio">un animal</p>              
+                <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
+                <h1 class="tituloAnimales">Adopta</h1>
+                <p class="precio">un animal</p>
             </div>
             <div>
                 <img src="./img/manati2.png" class="imgAnimales">
@@ -321,36 +511,58 @@
             <div class="descAnim">
                 <h2 class="tituloNombreA" id="titmanati">Manatí</h2>
                 <p><strong>Nombre científico:</strong> Trichechus inunguis<br>
-                <strong>Orden:</strong> Sirenia<br>
-                <strong>Familia:</strong> Trichechidae</p>
+                    <strong>Orden:</strong> Sirenia<br>
+                    <strong>Familia:</strong> Trichechidae</p>
                 <h3>Descripción General</h3>
-                <p class="descGene">Este manatí es el más pequeño de todos. El mayor tamaño registrado es de 2.8 metros y el peso máximo es de 480 kilos. Al nacer miden entre 85 y 105 centímetros, y pesan entre 10 y 15 kilos. </p>
-                <p class="descGene">Su cuerpo tiene una forma más o menos cilíndrica y más fusiforme (forma de huso) que en las otras especies de manatíes. Su cabeza es grande, los ojos son pequeños y las aberturas de los oídos son diminutas.  Tiene un par de fosas nasales provistas de válvulas, que se cierran cuando se sumergen, y están ubicadas en la parte superior de la cabeza. </p>
-                <p class="descGene">La piel es suave, regular y con apariencia de goma, generalmente es de color gris oscuro o negro. La mayoría de los manatíes en el Amazonas tienen una mancha clara muy sobresaliente en la región ventral ubicada hacia el centro del pecho o del abdomen. Los adultos tienen entre siete u ocho dientes en cada media mandíbula – maxila (ramus), los cuales se reemplazan a medida que se desgastan: sale un diente nuevo en la parte posterior y la hilera se desplaza hacia adelante.</p>
+                <p class="descGene">Este manatí es el más pequeño de todos. El mayor tamaño registrado es de 2.8 metros
+                    y el peso máximo es de 480 kilos. Al nacer miden entre 85 y 105 centímetros, y pesan entre 10 y 15
+                    kilos. </p>
+                <p class="descGene">Su cuerpo tiene una forma más o menos cilíndrica y más fusiforme (forma de huso) que
+                    en las otras especies de manatíes. Su cabeza es grande, los ojos son pequeños y las aberturas de los
+                    oídos son diminutas. Tiene un par de fosas nasales provistas de válvulas, que se cierran cuando se
+                    sumergen, y están ubicadas en la parte superior de la cabeza. </p>
+                <p class="descGene">La piel es suave, regular y con apariencia de goma, generalmente es de color gris
+                    oscuro o negro. La mayoría de los manatíes en el Amazonas tienen una mancha clara muy sobresaliente
+                    en la región ventral ubicada hacia el centro del pecho o del abdomen. Los adultos tienen entre siete
+                    u ocho dientes en cada media mandíbula – maxila (ramus), los cuales se reemplazan a medida que se
+                    desgastan: sale un diente nuevo en la parte posterior y la hilera se desplaza hacia adelante.</p>
                 <img src="./img/manatiDesc.png" class="imgAnimalesD imgAnimales">
-                <p> <strong>1. </strong>Hocico cuadriforme, cubierto de gruesos pelos sensoriales con labios suaves y muy móviles  </p>
-                <p><strong>2. </strong>Fosas nasales que se cierran como válvulas al sumergirse debajo del agua</p>  
-                <p><strong>3. </strong>Glándula mamaria debajo de cada aleta pectoral en el caso de las Hembras ♀</p>   
-                <p><strong>4. </strong>Tres ó cuatro uñas en el extremo de las aletas pectorales</p>   
-                <p><strong>5. </strong>Aleta caudal amplia y comprimida</p>    
+                <p> <strong>1. </strong>Hocico cuadriforme, cubierto de gruesos pelos sensoriales con labios suaves y
+                    muy móviles </p>
+                <p><strong>2. </strong>Fosas nasales que se cierran como válvulas al sumergirse debajo del agua</p>
+                <p><strong>3. </strong>Glándula mamaria debajo de cada aleta pectoral en el caso de las Hembras ♀</p>
+                <p><strong>4. </strong>Tres ó cuatro uñas en el extremo de las aletas pectorales</p>
+                <p><strong>5. </strong>Aleta caudal amplia y comprimida</p>
                 <h3>Distribución</h3>
-                <p class="descGene">Su presencia se restringe a la <strong>cuenca del Amazonas</strong>, desde la Isla de Marajó en <strong>Brasil</strong> hasta los ríos Ucayali y Napo en <strong>Perú</strong> y <strong>Ecuador.</strong> </p>
-                <p class="descGene">En <strong>Colombia</strong> se encuentra en los <strong>ríos Amazonas</strong>, Putumayo (probablemente desde Arica aguas abajo), Caquetá (abajo del raudal de Córdoba) y en el bajo Apaporis, especialmente en el lago Taraira.</p>
+                <p class="descGene">Su presencia se restringe a la <strong>cuenca del Amazonas</strong>, desde la Isla
+                    de Marajó en <strong>Brasil</strong> hasta los ríos Ucayali y Napo en <strong>Perú</strong> y
+                    <strong>Ecuador.</strong> </p>
+                <p class="descGene">En <strong>Colombia</strong> se encuentra en los <strong>ríos Amazonas</strong>,
+                    Putumayo (probablemente desde Arica aguas abajo), Caquetá (abajo del raudal de Córdoba) y en el bajo
+                    Apaporis, especialmente en el lago Taraira.</p>
                 <h3>Hábitat</h3>
-                <p class="descGene">Se encuentra restringido a ambientes fluviales y lacustres (perteneciente o relativo a los lagos), donde encuentra plantas acuáticas para su consumo. Es un animal totalmente herbívoro.</p>
+                <p class="descGene">Se encuentra restringido a ambientes fluviales y lacustres (perteneciente o relativo
+                    a los lagos), donde encuentra plantas acuáticas para su consumo. Es un animal totalmente herbívoro.
+                </p>
                 <h3>Amenazas</h3>
-                <p class="descGene">Esta especie ha sido sometida a una intensa caza. Al principio se cazaba para comercializar aceite y carne, entre 1935 y 1954 se comercializaba su piel y actualmente se caza por motivos de subsistencia de las comunidades que habitan en su zona de distribución. El <strong>T. inunguis</strong> es una especie muy susceptible a la caza porque su tasa de reproducción es muy baja.</p>
+                <p class="descGene">Esta especie ha sido sometida a una intensa caza. Al principio se cazaba para
+                    comercializar aceite y carne, entre 1935 y 1954 se comercializaba su piel y actualmente se caza por
+                    motivos de subsistencia de las comunidades que habitan en su zona de distribución. El <strong>T.
+                        inunguis</strong> es una especie muy susceptible a la caza porque su tasa de reproducción es muy
+                    baja.</p>
                 <div class="contBtn">
-                    <div class="btnAdquirir" onclick="cambiarSeccion(9);"><p>Quiero adoptar</p></div>
+                    <div class="btnAdquirir" onclick="cambiarSeccion(9);">
+                        <p>Quiero adoptar</p>
+                    </div>
                 </div>
             </div>
-        
+
         </seccion>
         <seccion id="delfin" class="tiposAnim oculto">
             <div class="headerAnimales">
-                    <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
-                    <h1 class="tituloAnimales">Adopta</h1>
-                    <p class="precio">un animal</p>              
+                <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
+                <h1 class="tituloAnimales">Adopta</h1>
+                <p class="precio">un animal</p>
             </div>
             <div>
                 <img src="./img/delfin2.png" class="imgAnimales">
@@ -358,35 +570,63 @@
             <div class="descAnim">
                 <h2 class="tituloNombreA" id="titdelfin">Delfín</h2>
                 <p><strong>Nombre científico:</strong> Inia geoffrensis <br>
-                <strong>Orden:</strong> Cetacea <br>
-                <strong>Familia:</strong> Platanistidae</p>
+                    <strong>Orden:</strong> Cetacea <br>
+                    <strong>Familia:</strong> Platanistidae</p>
                 <h3>Descripción General</h3>
-                <p class="descGene">Es el delfín de río más grande, su cuerpo es robusto, flexible y poco hidrodinámico; tiene un hocico largo y estrecho con más o menos 106 dientes (es de tipo heterodonta, es decir que tiene dientes incisivos y molares, a diferencia de los delfines marinos que es homodonta). </p>
-                <p class="descGene">No presenta un dimorfismo sexual marcado, pero el macho es un poco más grande: puede llegar a medir hasta 2.8 metros y pesar hasta 180 kilos. Su coloración es variable, pero generalmente las crías son de un gris oscuro y a medida que crece puede variar entre gris/rosado o mantener solo el gris. </p>
-                <p class="descGene">Cuando estos animales realizan actividad física, su coloración rosada se incrementa como un mecanismo para regular la temperatura; comienza a fluir más sangre a los vasos sanguíneos periféricos aumentando el tono rosado. Una vez disminuye la actividad, la coloración original retorna. No todos los delfines cambian de gris a rosado, y esto parece estar explicado por características fenotípicas.</p>
-                <p class="descGene">La aleta dorsal es baja y se prolonga a manera de quilla a lo largo del dorso, las aletas pectorales son grandes y tienen una adaptación en la escápula que les permite un ángulo pronunciado de rotación. A diferencia de la mayoría de los delfines de mar, en el Inia las vértebras cervicales están libres, lo que les permite rotar la cabeza de un lado a otro.  Los ojos son pequeños, pero funcionales. </p>
-                <p class="descGene">El melón es pronunciado, especialmente en adultos, y sirve como un direccionador acústico para las ondas que producen ecolocalización.</p>
+                <p class="descGene">Es el delfín de río más grande, su cuerpo es robusto, flexible y poco hidrodinámico;
+                    tiene un hocico largo y estrecho con más o menos 106 dientes (es de tipo heterodonta, es decir que
+                    tiene dientes incisivos y molares, a diferencia de los delfines marinos que es homodonta). </p>
+                <p class="descGene">No presenta un dimorfismo sexual marcado, pero el macho es un poco más grande: puede
+                    llegar a medir hasta 2.8 metros y pesar hasta 180 kilos. Su coloración es variable, pero
+                    generalmente las crías son de un gris oscuro y a medida que crece puede variar entre gris/rosado o
+                    mantener solo el gris. </p>
+                <p class="descGene">Cuando estos animales realizan actividad física, su coloración rosada se incrementa
+                    como un mecanismo para regular la temperatura; comienza a fluir más sangre a los vasos sanguíneos
+                    periféricos aumentando el tono rosado. Una vez disminuye la actividad, la coloración original
+                    retorna. No todos los delfines cambian de gris a rosado, y esto parece estar explicado por
+                    características fenotípicas.</p>
+                <p class="descGene">La aleta dorsal es baja y se prolonga a manera de quilla a lo largo del dorso, las
+                    aletas pectorales son grandes y tienen una adaptación en la escápula que les permite un ángulo
+                    pronunciado de rotación. A diferencia de la mayoría de los delfines de mar, en el Inia las vértebras
+                    cervicales están libres, lo que les permite rotar la cabeza de un lado a otro. Los ojos son
+                    pequeños, pero funcionales. </p>
+                <p class="descGene">El melón es pronunciado, especialmente en adultos, y sirve como un direccionador
+                    acústico para las ondas que producen ecolocalización.</p>
                 <img src="./img/delfinrosado.png" class="imgAnimalesD imgAnimales">
                 <p> <strong>1. </strong>Hocico largo y estrecho con 106 dientes</p>
-                <p><strong>2. </strong>Melón pronunciado</p>  
-                <p><strong>3. </strong>Vértebras cervicales libres</p>   
-                <p><strong>4. </strong>Aleta dorsal baja y prolongada en forma de quilla</p>   
-                <p><strong>5. </strong>Aletas pectorales grandes con ángulo pronunciado de rotación</p>    
+                <p><strong>2. </strong>Melón pronunciado</p>
+                <p><strong>3. </strong>Vértebras cervicales libres</p>
+                <p><strong>4. </strong>Aleta dorsal baja y prolongada en forma de quilla</p>
+                <p><strong>5. </strong>Aletas pectorales grandes con ángulo pronunciado de rotación</p>
                 <h3>Distribución</h3>
-                <p class="descGene">Esta especie se encuentra ampliamente distribuida en las cuencas de los ríos <strong>Amazonas, Orinoco</strong> y en la mayoría de sus tributarios, pero está limitada en las cabeceras de los mismos por raudales y cascadas. </p>
-                <p class="descGene">En la <strong>Amazonia colombiana</strong> habita en los ríos Caquetá, Apaporis, Mirití Paraná, Cahuinarí, Putumayo, Igará Paraná, Cotué, Amazonas y en una gran cantidad de tributarios y lagos, como los lagos de Tarapoto y La Paya; y en la <strong>Orinoquia</strong> se encuentra en los ríos Meta, Guayabero, Yucao, Manacacías, Tillavá, Planas, Vichada, Tomo, Tuparro, Guaviare, Inírida, Orinoco, Bita, Arauca, Cravo Norte y Casanare.</p>
+                <p class="descGene">Esta especie se encuentra ampliamente distribuida en las cuencas de los ríos
+                    <strong>Amazonas, Orinoco</strong> y en la mayoría de sus tributarios, pero está limitada en las
+                    cabeceras de los mismos por raudales y cascadas. </p>
+                <p class="descGene">En la <strong>Amazonia colombiana</strong> habita en los ríos Caquetá, Apaporis,
+                    Mirití Paraná, Cahuinarí, Putumayo, Igará Paraná, Cotué, Amazonas y en una gran cantidad de
+                    tributarios y lagos, como los lagos de Tarapoto y La Paya; y en la <strong>Orinoquia</strong> se
+                    encuentra en los ríos Meta, Guayabero, Yucao, Manacacías, Tillavá, Planas, Vichada, Tomo, Tuparro,
+                    Guaviare, Inírida, Orinoco, Bita, Arauca, Cravo Norte y Casanare.</p>
                 <h3>Hábitat</h3>
-                <p class="descGene">Esta especie se encuentra asociada con frecuencia a sistemas donde confluyen varios ríos, ya que estas áreas tienen concentraciones de peces: grandes ríos, tributarios, lagunas, confluencias y el bosque inundado.</p>
+                <p class="descGene">Esta especie se encuentra asociada con frecuencia a sistemas donde confluyen varios
+                    ríos, ya que estas áreas tienen concentraciones de peces: grandes ríos, tributarios, lagunas,
+                    confluencias y el bosque inundado.</p>
                 <h3>Amenazas</h3>
-                <p class="descGene">En Colombia, las principales amenazas para esta especie son las interacciones negativas con los pecadores: individuos atrapados en mallas de monofilamento y cacería o envenenamiento para evitar que el delfín se acerque a las mallas, porque es percibido por los pescadores como una fuerte competencia por el recurso pesquero.</p>
+                <p class="descGene">En Colombia, las principales amenazas para esta especie son las interacciones
+                    negativas con los pecadores: individuos atrapados en mallas de monofilamento y cacería o
+                    envenenamiento para evitar que el delfín se acerque a las mallas, porque es percibido por los
+                    pescadores como una fuerte competencia por el recurso pesquero.</p>
                 <div class="contBtn">
-                    <div class="btnAdquirir" onclick="cambiarSeccion(9);"><p>Quiero adoptar</p></div>
+                    <div class="btnAdquirir" onclick="cambiarSeccion(9);">
+                        <p>Quiero adoptar</p>
+                    </div>
                 </div>
             </div>
-        
+
         </seccion>
     </div>
-    
+
 </body>
 <script src="js/main.js"></script>
+
 </html>
