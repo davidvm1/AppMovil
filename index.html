@@ -176,55 +176,54 @@
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-        <seccion id="seguimSeccion" class="oculto">
-            <div>
-                <img src="./img/Grupo 154.png" class="btnAtras">
-                <div class="imgsprincipal">
-                    <div class="botones">
-                        <nav id="menu">
-                            <ul>
-                                <li><a href=""><img src="img/manatí.png" alt="" id="img1"></a>
-                                    <ul class="fondobtnmanati">
-                                        <li><a class="btnanimal" id="pobmanati" onclick="cambiarTxt(this.id)">Población</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="alimanati" onclick="cambiarTxt(this.id)">Alimentación</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="habmanati" onclick="cambiarTxt(this.id)">Estatus del habitat</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=""><img src="img/delfin.png" alt="" id="img2"></a>
-                                    <ul class="fondobtndelfin">
-                                        <li><a class="btnanimal" id="pobdelfin" onclick="cambiarTxt(this.id)">Población</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="alidelfin" onclick="cambiarTxt(this.id)">Alimentación</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="habdelfin" onclick="cambiarTxt(this.id)">Estatus del habitat</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=""><img src="img/nutria.png" alt="" id="img3"></a>
-                                    <ul class="fondobtnnutria">
-                                        <li><a class="btnanimal" id="pobnutria" onclick="cambiarTxt(this.id)">Población</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="alinutria" onclick="cambiarTxt(this.id)">Alimentación</a></li>
-                                        <hr size="1px" color="black" class="separador"/>
-                                        <li><a class="btnanimal" id="habnutria" onclick="cambiarTxt(this.id)">Estatus del habitat</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <img src="img/mapamain.png" alt="mapamanati" id="mapa">
-                </div>
+
+
+
+
+
+        <seccion id="seguimSeccion" class="">
+            <div class="menuFooter">  
+                <div class="footer">       
+                   <img src="img/Grupo%20165.png" class="logoMenuInicio">
+                   <img src="img/mapa.png" class="logoMapaInicio">
+                   <img src="img/usuario.png" class="logoUsuarioInicio">
+                </div> 
             </div>
-            <div class="informacion">
-                <p id="parrafo1">En la fundación <strong>Omacha</strong> creamos estrategias para garantizar la conservación y el uso sostenible de ecosistemas y especies acuáticas y terrestres.</p>
-                <p id="parrafo2">En este mapa podrás encontrar el seguimiento a estas 3 especies que puedes adoptar, te actualizaremos con la información actual de su hábitat, el número de especímenes que hemos podido registrar y el estado en que se encuentra sus reservas de comida.</p>
-                <p id="parrafo3"></p>
-                <p id="parrafo4"></p>
-                <p id="parrafo5"></p>
+            <div id="contenido">
+                <div class="menuseguimiento">
+                    <img src="img/black.jpg" id="background">
+                    <div class="footerseguimiento">
+                        <img src="img/delfin.png" class="delfinSeg" id="segdelfin" onclick="cambiarTxt(this.id)">
+                        <img src="img/nutria.png" class="nutriaSeg" id="segnutria" onclick="cambiarTxt(this.id)">
+                        <img src="img/manati1.png" class="manatiSeg" id="segmanati" onclick="cambiarTxt(this.id)">
+                    </div>
+                </div>
+                <div class="informacion">
+                    <div id="flexSeg">
+                        <img src="img/black.jpg" id="background">
+                        <img src="img/mapamain.png" alt="" id="mapaSeg">
+                    </div>
+                    <div class="parrafos">
+                        <h1 class="tituloseg" id="titulo1"></h1>
+                        <p id="parrafo1">En este mapa podrás encontrar el seguimiento a estas 3 especies que puedes adoptar, te actualizaremos con la información actual de su hábitat, el número de especímenes que hemos podido registrar y el estado en que se encuentra sus reservas de comida.</p>
+                        <p id="parrafo2"></p>
+                        <p id="parrafo3"></p>
+                        <h1 class="tituloseg" id="titulo2"></h1>
+                        <p id="parrafo4"></p>
+                        <p id="parrafo5"></p>
+                        <p id="parrafo6"></p>
+                        <h1 class="tituloseg" id="titulo3"></h1>
+                        <p id="parrafo7"></p>
+                        <p id="parrafo8"></p>
+                    </div>
+                </div>
             </div>
         </seccion>
         
+
+
+
+
         <seccion id="inicio" class="oculto">
             <div class="menuFooter">  
                 <div class="footer">       
@@ -252,7 +251,7 @@
             </div>
         </seccion>
         
-        <seccion id="planesAdopcion" class="">
+        <seccion id="planesAdopcion" class="oculto">
             <div class="menuFooter">  
                 <div class="footer">       
                    <img src="img/Grupo%20165-blanco.png" class="logoMenuInicio">
