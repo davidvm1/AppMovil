@@ -359,23 +359,26 @@ strong{
 }
 .gracias{
     text-align: center;
+    color: #AFD6A1 !important;
 }
-.campoForm{
-    height: 43px;
-    border: solid;
-    border-color: #AFD6A1;
-    font-family: sans-serif;
-    font-size: 19px;
-    margin: 1%;
-    padding-left: 5px;
+.planes .pagando{
+    text-align: center;
 }
 .planes h2{
-    color: #AFD6A1;
+    color: #707070;
     font-weight: normal;
     font-family: sans-serif;
     padding: 10%;
     line-height: 1.3;
     margin-left: 5%;
+    text-align: center;
+}
+.planes h3{
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: normal;
+    color: #AFD6A1;
+    padding: 5%;
 }
 .guardian .header p{
     font-size: 23px;
@@ -468,11 +471,8 @@ strong{
         width: 50px;
     }
 }
-::placeholder{
-    color:#AFD6A1;
-}
-.formPagar{
-    text-align: center;
+.amigo .header{
+    background-image: url(../img/patron1.png);
 }
 .patrocinador .header{
     opacity: 100%;
@@ -668,6 +668,21 @@ strong{
     .oculto{
         display: none !important;
     }
+    /*Splash*/
+    #splash{
+        width: 100%;
+        height: 100%;
+        font-family: Roboto;
+        display:contents;
+    }
+
+    #logo_splash{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 50%;
+    }
     /*Registro*/
     #signup{
         width: 100%;
@@ -739,10 +754,7 @@ strong{
         padding: 112px 30px 0px 0px !important;
     }
     #login .logo_cont h1{
-        position: absolute;
-        left: 34%;
         font-size: 30px;
-        top: 48%;
     }
 
     
@@ -796,7 +808,7 @@ strong{
     }
 
     #foto_perfil{
-        padding: 63px 0px 0px 63px !important;
+        padding: 60px 0px 0px 0px !important;
     }
 
     #usuario .logo_cont h1{
@@ -808,6 +820,7 @@ strong{
         top: 286px;
         left: 60px;   
     }
+
 
     /*clase para estilos de hipervinculos*/
     .hipervinculo{
@@ -874,10 +887,12 @@ strong{
         justify-content: left; ;
     }
     .perfil_cont p{
-        height: 100%;
-        width: auto;
-        font-size: 40px;
-        padding: 3%;
+        height: 100%! important;
+        width: auto !important;
+        font-size: 40px !important;
+        padding: 3% !important;
+        color: black !important;
+        font-family: Roboto !important
     }
 
     #volver_cont{

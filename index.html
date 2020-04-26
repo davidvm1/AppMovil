@@ -11,14 +11,18 @@
 </head>
 
 <body>
+    <!--contenido App-->
     <div id="content">
+        <section id="splash">
+            <img id="logo_splash" src="img/logo_login.png">
+        </section>
         <!--Signup-->
-        <section id="signup" class="oculto">
+        <section id="signup" >
             <div class="logo_cont">
                 <img src="img/logo_signup.png" alt="logo">
                 <br>
             </div>
-            <div class="input_cont" class="oculto">
+            <div class="input_cont">
                 <form>
                     <input type="text" placeholder="Nombre(s) y apellidos" required>
                     <br>
@@ -31,13 +35,13 @@
                     <br>
                     <input class="contrasena" type="password" placeholder="Confirma Contraseña" required>
                     <br>
-                    <button type="submit">Iniciar</button>
+                    <button type="submit" onclick="cambiarSeccion(19)">Iniciar</button>
                     <br>
                 </form>
-            </div>
-            <!--Login-->
+            </div>           
         </section>
-        <section id="login" class="oculto">
+        <!--Login-->
+        <section id="login" >
             <div class="logo_cont">
                 <img src="img/logo_login.png" alt="logo">
                 <h1>Bienvenido</h1>
@@ -48,15 +52,15 @@
                     <br>
                     <input type="text" placeholder="Contraseña" required>
                     <br>
-                    <p>¿Olvidaste tu contraseña? <span>Click aquí</span></p>
-                    <p>¿Todavía no tienes una cuenta? <span>Crear una cuenta</span></p>
+                    <p>¿Olvidaste tu contraseña? <span onclick="cambiarSeccion(15)">Click aquí</span></p>
+                    <p>¿Todavía no tienes una cuenta? <span onclick="cambiarSeccion(13)">Crear una cuenta</span></p>
                     <button type="submit">Iniciar</button>
                 </form>
 
             </div>
         </section>
         <!--Recuperacion clave-->
-        <section id="recuperar" class="oculto">
+        <section id="recuperar" >
             <div class="logo_cont">
                 <img src="img/logo_signup.png" alt="logo">
                 <h1>Restablecer <br>Contraseña</h1>
@@ -65,12 +69,12 @@
                 <form>
                     <input type="text" placeholder="Correo Electrónico" required>
                     <br>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="cambiarSeccion(16)">Enviar</button>
                 </form>
             </div>
         </section>
         <!--Cambio de clave-->
-        <section id="nueva_contra" class="oculto">
+        <section id="nueva_contra" >
             <div class="logo_cont">
                 <img src="img/logo_signup.png" alt="logo">
                 <h1>Restablecer <br>Contraseña</h1>
@@ -80,13 +84,14 @@
                     <input type="password" placeholder="Contraseña" required>
                     <br>
                     <input type="password" placeholder="Confirmar contraseña" required>
-                    <button type="submit">Confirmar</button>
+                    <button type="submit" onclick="cambiarSeccion(14)">Confirmar</button>
                 </form>
             </div>
         </section>
-        <seccion id="amiPlan" class="oculto">
+        <!--Plan Amigo-->
+        <seccion id="amiPlan" class="amigo" >
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras">
+                <img src="./img/volver blanco.png" class="btnAtras">
                 <h1 class="tituloAmigo">Amigo</h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
@@ -112,35 +117,32 @@
                 </div>
             </div>
         </seccion>
-        <seccion class="planes oculto" id="pagarAmigo">
+        <!--Pagar plan Amigo-->
+        <seccion class="planes amigo" id="pagarAmigo">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(1);">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Amigo
                 </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
 
             <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
-            <div class="formPagar">
-                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
-                <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname"
-                    placeholder="Tipo de cliente                                     ^">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
-                <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
+            <div class="pagando">
+                <h3>Dona con</h3>
+                 <img src="./img/pse-logo-4AE3A79534-seeklogo.com.png" class="btnPse"> 
             </div>
+                      
             <div class="contBtn">
                 <div class="btnAdquirir" onclick="cambiarSeccion(3);">
-                    <p>Continuar</p>
+                    <p>Aquí</p>
                 </div>
             </div>
 
         </seccion>
-        <seccion class="planes oculto" id="amiGracias">
+        <!--Mensajes despues de pago Amigo-->
+        <seccion class="planes amigo" id="amiGracias">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(1);">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(1);">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Amigo
                 </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
@@ -148,9 +150,10 @@
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-        <seccion class="patrocinador oculto" id="patrPlan">
+        <!--Plan Patrocinador-->
+        <seccion class="patrocinador " id="patrPlan">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras">
+                <img src="./img/volver blanco.png" class="btnAtras">
                 <h1 class="tituloAmigo">Patrocinador</h1>
                 <p class="precio">$850.000/ año (USD $275)</p>
             </div>
@@ -180,35 +183,32 @@
                 </div>
             </div>
         </seccion>
-        <seccion class="planes patrocinador oculto" id="pagarPatrocinador">
+        <!--Pagar plan patrocinador-->
+        <seccion class="planes patrocinador " id="pagarPatrocinador">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4);">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(4);">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Patrocinador
                 </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
             </div>
 
             <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
-            <div class="formPagar">
-                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
-                <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname"
-                    placeholder="Tipo de cliente                                     ^">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
-                <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
+            <div class="pagando">
+                <h3>Dona con</h3>
+                 <img src="./img/pse-logo-4AE3A79534-seeklogo.com.png" class="btnPse"> 
             </div>
+                      
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(6);">
-                    <p>Continuar</p>
+                <div class="btnAdquirir" onclick="cambiarSeccion(3);">
+                    <p>Aquí</p>
                 </div>
             </div>
 
         </seccion>
-        <seccion class="planes patrocinador oculto" id="patrGracias">
+        <!--Mensajes despues de pago Patrocinador-->
+        <seccion class="planes patrocinador " id="patrGracias">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(4)">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(4)">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Patrocinador
                 </h1>
                 <p class="precio">$250.000/año (USD $100)</p>
@@ -216,11 +216,10 @@
             <h2 class="gracias">¡Gracias Pepe Martínez!
                 Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
         </seccion>
-
-
-        <seccion class="guardian oculto" id="guarPlan">
+        <!--Plan Guardian-->
+        <seccion class="guardian" id="guarPlan">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras">
+                <img src="./img/volver blanco.png" class="btnAtras">
                 <h1 class="tituloAmigo">Guardián</h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
@@ -245,44 +244,40 @@
                 </div>
             </div>
         </seccion>
-        <seccion class="planes guardian oculto" id="pagarGuardian">
+        <!--Pagar Plan Guardian-->
+        <seccion class="planes guardian " id="pagarGuardian">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7)">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(7)">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Guardián
                 </h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
 
-
-            <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>
-            <div class="formPagar">
-                <input class="campoForm" name="fname" placeholder="Seleccionar banco                               ^">
-                <input type="text" class="campoForm" name="fname" placeholder="Nombre del titular de la cuenta">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de cédula o NIT">
-                <input type="text" class="campoForm" name="fname"
-                    placeholder="Tipo de cliente                                     ^">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de la cuenta">
-                <input type="text" class="campoForm" name="fname" placeholder="Dirección de residencia">
-                <input type="number" class="campoForm" name="fname" placeholder="Número de celular">
+            <div class="pagando">
+            <h2>Pepe Martínez, Colombia<br>10/03/92<br>pepethebest@yahoo.com</h2>           
+                <h3>Dona con</h3>
+                 <img src="./img/pse-logo-4AE3A79534-seeklogo.com.png" class="btnPse"> 
             </div>
+                      
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(9);">
-                    <p>Continuar</p>
+                <div class="btnAdquirir" >
+                    <p>Aquí</p>
                 </div>
             </div>
 
         </seccion>
-        <seccion class="planes guardian oculto" id="guarGracias">
+        <!--Mensajes despues de pago Guardian-->
+        <seccion class="planes guardian " id="guarGracias">
             <div class="header">
-                <img src="./img/Grupo 154.png" class="btnAtras" onclick="cambiarSeccion(7);">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(7);">
                 <h1 class="tituloAmigo plnAmigo">Plan <br> Guardián
                 </h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
-            <h2 class="gracias">¡Gracias Pepe Martínez!
-                Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies</h2>
+            <h2 class="gracias"></h2>
         </seccion>
-        <seccion id="seguimSeccion" class="oculto">
+        <!--Mapas-->
+        <seccion id="seguimSeccion" >
             <div class="menuFooter">
                 <div class="footer">
                     <img src="img/Grupo%20165.png" class="logoMenuInicio">
@@ -322,7 +317,8 @@
                 </div>
             </div>
         </seccion>
-        <seccion id="inicio" class="oculto">
+        <!--Menu principal-->
+        <seccion id="inicio" >
             <div class="menuFooter">
                 <div class="footer">
                     <img src="img/Grupo%20165.png" class="logoMenuInicio">
@@ -348,17 +344,15 @@
                 <button class="botonAnimales" id="botonManati">Manatí</button>
             </div>
         </seccion>
-
         <!--Perfil de usuario-->
-        <section id="usuario" class="oculto">
+        <section id="usuario">
             <div class="logo_cont">
-                <img src="img/volver.png" id="btn_volver">
                 <img src="img/foto_perfil.png" alt="foto_perfil" id="foto_perfil">
                 <br>
                 <span>Cambiar foto</span>
                 <h1>Pepe Martinez</h1>
                 <br>
-                <a href="" class="hipervinculo" id="ampliar_cuenta">Ampliar información de mi cuenta</a>
+                <a href="#" class="hipervinculo" id="ampliar_cuenta" onclick="cambiarSeccion(18)">Ampliar información de mi cuenta</a>
             </div>
             <div class="input_cont">
                 <br>
@@ -370,22 +364,21 @@
                     <img src="img/separador.png">
                     <img src="img/delfin_usuario.png">
                     <img src="img/separador.png">
-                    <img src="img/nutria._usuario.png">
+                    <img src="img/nutria_usuario.png">
                 </div>
                 <br>
                 <span>Usted es donador de tipo</span>
                 <h1>AMIGO</h1>
-                <button type="button">Más información sobre mi plan</button>
+                <button type="button" onclick="cambiarSeccion(1)">Más información sobre mi plan</button>
                 <br>
                 <br>
-                <a class="hipervinculo" href="">Cerrar sesión</a>
+                <a class="hipervinculo" href="#" onclick="cambiarSeccion(14)">Cerrar sesión</a>
             </div>
         </section>
-
         <!--Ampliacion de datos personales-->
         <section id="datos_personales">
             <div id="volver_cont">
-                <img src="img/volver.png" id="btn_volver">
+                <img src="img/volver.png" id="btn_volver" onclick="cambiarSeccion(17)">
             </div>
             <div class="perfil_cont">
                 <img src="img/foto_perfil_menor.png" alt="logo" id="foto_perfil_menor">
@@ -419,8 +412,8 @@
                 </form>
             </div>
         </section>
-
-        <seccion id="planesAdopcion" class="oculto">
+        <!--Planes de adopcion-->
+        <seccion id="planesAdopcion" >
             <div class="menuFooter">
                 <div class="footer">
                     <img src="img/Grupo%20165-blanco.png" class="logoMenuInicio">
@@ -440,7 +433,8 @@
             <button id="botonPatrocinador" class="botonAdopciones">Patrocinador</button>
             <button id="botonGuardian" class="botonAdopciones">Guardian</button>
         </seccion>
-        <seccion id="nutria" class="tiposAnim oculto">
+        <!--Vista nutria-->
+        <seccion id="nutria" class="tiposAnim ">
             <div class="headerAnimales">
                 <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
                 <h1 class="tituloAnimales">Adopta</h1>
@@ -499,7 +493,8 @@
             </div>
 
         </seccion>
-        <seccion id="manati" class="tiposAnim oculto">
+        <!--vista manati-->
+        <seccion id="manati" class="tiposAnim ">
             <div class="headerAnimales">
                 <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
                 <h1 class="tituloAnimales">Adopta</h1>
@@ -558,7 +553,8 @@
             </div>
 
         </seccion>
-        <seccion id="delfin" class="tiposAnim oculto">
+        <!--vista delfin-->
+        <seccion id="delfin" class="tiposAnim ">
             <div class="headerAnimales">
                 <img src="./img/btn atras.png" class="btnAtras" onclick="cambiarSeccion(7)">
                 <h1 class="tituloAnimales">Adopta</h1>
@@ -623,7 +619,7 @@
                 </div>
             </div>
 
-        </seccion>
+        </seccion>  
     </div>
 
 </body>

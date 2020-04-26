@@ -6,11 +6,13 @@ var tiempo_splash = 4400;
 window.onload = function() {
 	inicializarReferencias();
 
-	/*document.getElementById('imgSplash').src = 'img/Splash.gif';
-	setTimeout(cambiarSplash, tiempo_splash);*/
+	/*document.getElementById('imgSplash').src = 'img/Splash.gif';*/
+	/*setTimeout(cambiarSplash, tiempo_splash);*/
 };
 
 function inicializarReferencias() {
+	//velasquez
+	
 	secciones[1] = document.getElementById('amiPlan');
 	secciones[2] = document.getElementById('pagarAmigo');
 	secciones[3] = document.getElementById('amiGracias');
@@ -20,6 +22,25 @@ function inicializarReferencias() {
     secciones[7] = document.getElementById('guarPlan');
     secciones[8] = document.getElementById('pagarGuardian');
 	secciones[9] = document.getElementById('guarGracias');
+	secciones[10]=document.getElementById('nutria');
+	secciones[11]=document.getElementById('manati');
+	secciones[12]=document.getElementById('delfin');
+	//vieira
+	secciones[13]=document.getElementById('signup');
+	secciones[14]=document.getElementById('login');
+	secciones[15]=document.getElementById('recuperar');
+	secciones[16]=document.getElementById('nueva_contra');
+	secciones[17]=document.getElementById('usuario');
+	secciones[18]=document.getElementById('datos_personales');
+	//Franco
+	secciones[19]=document.getElementById('inicio');	
+	secciones[20]=document.getElementById('planesAdopcion');
+	//Eche
+	secciones[21]=document.getElementById('seguimSeccion');
+	secciones[22] = document.getElementById('splash');
+	
+
+	//Eche
 	parrafo[1] = document.getElementById('parrafo1');
 	parrafo[2] = document.getElementById('parrafo2');
 	parrafo[3] = document.getElementById('parrafo3');
@@ -91,8 +112,8 @@ function cambiarTxt(caller){
 }
 
 /*function cambiarSplash() {
-	secciones[1].className = 'splash oculto';
-	secciones[2].className = 'home';
+	secciones[0].className = 'splash oculto';
+	secciones[14].className = 'login';
 }*/
 // funcion para cambiar la seccion
 function cambiarSeccion(id_seccion) {
@@ -103,4 +124,23 @@ function cambiarSeccion(id_seccion) {
 	secciones[id_seccion].classList.add('animated');
 	secciones[id_seccion].classList.add('fadeIn');
 	secciones[id_seccion].classList.remove('oculto');
+}
+function pagoAceptado(){
+	var pago=document.getElementsByClassName("gracias");
+	console.log(pago);
+	pago.textContent='';
+	for(var i in pago){
+		pago[i].innerHTML="¡Gracias Pepe Martínez!<br>"+
+		"Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies";
+	}
+}
+function pagoDeclinado(){
+	var pago=document.getElementsByClassName("gracias");
+	console.log(pago);
+	pago.textContent='';
+	for(var i in pago){
+		pago[i].innerHTML="Lo sentimos, Pepe Martínez "+
+		"Ha ocurrido un error en el proceso de pago."+ 
+		"Inténtalo más tarde.";
+	}
 }
