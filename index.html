@@ -55,7 +55,7 @@
                     <br>
                     <p>¿Olvidaste tu contraseña? <span onclick="cambiarSeccion(15)">Click aquí</span></p>
                     <p>¿Todavía no tienes una cuenta? <span onclick="cambiarSeccion(13)">Crear una cuenta</span></p>
-                    <button type="submit">Iniciar</button>
+                    <button type="submit" onclick="cambiarSeccion(19)">Iniciar</button>
                 </form>
 
             </div>
@@ -269,7 +269,7 @@
                 </div>
             </div>
             <div class="header">
-                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambarSeccion(20)">
+                <img src="./img/volver blanco.png" class="btnAtras" onclick="cambiarSeccion(20)">
                 <h1 class="tituloAmigo">Guardián</h1>
                 <p class="precio">$1.250.000+ /año (USD$450)</p>
             </div>
@@ -386,9 +386,9 @@
         <seccion id="inicio" >
             <div class="menuFooter">
                 <div class="footer">
-                    <img src="img/Grupo%20165.png" class="logoMenuInicio">
-                    <img src="img/mapa.png" class="logoMapaInicio">
-                    <img src="img/usuario.png" class="logoUsuarioInicio">
+                    <input type="image" src="img/Grupo%20165.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario.png" class="logoUsuarioInicio" onclick="cambiarSeccion(17)">
                 </div>
             </div>
 
@@ -400,17 +400,25 @@
             </div>
             <div id="imagenes">
                 <img src="img/delfinInicio.png" id="delfinInicio">
-                <button class="botonAnimales" id="botonDelfin">Delfín</button>
+                <button class="botonAnimales" id="botonDelfin" onclick="cambiarSeccion(12)">Delfín</button>
 
                 <img src="img/nutriaInicio.png" id="nutriaInicio">
-                <button class="botonAnimales" id="botonNutria">Nutria</button>
+                <button class="botonAnimales" id="botonNutria" onclick="cambiarSeccion(10)">Nutria</button>
 
                 <img src="img/manati.png" id="manatiInicio">
-                <button class="botonAnimales" id="botonManati">Manatí</button>
+                <button class="botonAnimales" id="botonManati" onclick="cambiarSeccion(11)">Manatí</button>
             </div>
         </seccion>
         <!--Perfil de usuario-->
         <section id="usuario">
+           <div class="menuFooter">
+                <div class="footer">
+                    <input type="image" src="img/Grupo%20165-blanco.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario-oscuro.png" class="logoUsuarioInicio">
+                </div>
+            </div>
+
             <div class="logo_cont">
                 <img src="img/foto_perfil.png" alt="foto_perfil" id="foto_perfil">
                 <br>
@@ -481,9 +489,9 @@
         <seccion id="planesAdopcion" >
             <div class="menuFooter">
                 <div class="footer">
-                    <img src="img/Grupo%20165-blanco.png" class="logoMenuInicio">
-                    <img src="img/mapa.png" class="logoMapaInicio">
-                    <img src="img/usuario.png" class="logoUsuarioInicio">
+                    <input type="image" src="img/Grupo%20165-blanco.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario.png" class="logoUsuarioInicio" onclick="cambiarSeccion(17)">
                 </div>
             </div>
 
@@ -494,9 +502,9 @@
                     tu nuevo amigo.</p>
             </div>
 
-            <button id="botonAmigo" class="botonAdopciones">Amigo</button>
-            <button id="botonPatrocinador" class="botonAdopciones">Patrocinador</button>
-            <button id="botonGuardian" class="botonAdopciones">Guardian</button>
+            <button id="botonAmigo" class="botonAdopciones" onclick="cambiarSeccion(1)">Amigo</button>
+            <button id="botonPatrocinador" class="botonAdopciones" onclick="cambiarSeccion(4)">Patrocinador</button>
+            <button id="botonGuardian" class="botonAdopciones" onclick="cambiarSeccion(7)">Guardian</button>
         </seccion>
         <!--Vista nutria-->
         <seccion id="nutria" class="tiposAnim ">
