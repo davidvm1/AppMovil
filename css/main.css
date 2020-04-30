@@ -407,6 +407,16 @@ strong{
         background-color: #99CDA8;
     
 }
+.patrocinador .footer{
+    background-color: white !important;
+}
+.amigo .footer{
+    background-color: white !important;
+
+}
+.guardian .footer{
+    background-color: white !important;
+}
 
 @media(max-width:320px){
     .campoForm{
