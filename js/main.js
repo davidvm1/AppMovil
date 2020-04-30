@@ -2,12 +2,11 @@ var secciones = [];
 var parrafo = [];
 var titulos = [];
 var imagen;
-var tiempo_splash = 4400;
+var tiempo_splash = 2600;
 window.onload = function() {
 	inicializarReferencias();
-
-	/*document.getElementById('imgSplash').src = 'img/Splash.gif';*/
-	/*setTimeout(cambiarSplash, tiempo_splash);*/
+	cambiarSeccion(22);
+	setTimeout(cambiarSplash, tiempo_splash);
 };
 
 function inicializarReferencias() {
@@ -111,10 +110,9 @@ function cambiarTxt(caller){
 	}
 }
 
-/*function cambiarSplash() {
-	secciones[0].className = 'splash oculto';
-	secciones[14].className = 'login';
-}*/
+function cambiarSplash() {
+	cambiarSeccion(14);
+}
 // funcion para cambiar la seccion
 function cambiarSeccion(id_seccion) {
 	for (var i in secciones) {

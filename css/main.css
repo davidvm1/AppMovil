@@ -194,7 +194,8 @@ body{
 
 .manatiSeg{
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
+    top: -90px;
     position: relative;
     height: 90px;
     width: 90px;
@@ -205,14 +206,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 90px;
     height: 90px;
     width: 90px;
 }
 
 .nutriaSeg{
     float: right;
-    margin-right: 15%;
+    top: -90px;
+    margin-right: 10%;
     position: relative;
     height: 90px;
     width: 90px;
@@ -223,10 +224,10 @@ body{
 .header{
     height: 300px;
     width: 100%;
-    background-color:#99CDA8;
+    background-color:#c5e0cd;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    opacity: 66%;
+    padding-top: 20%;
 }
 .oculto {
 	display: none;
@@ -234,12 +235,26 @@ body{
 .menuFooter{
     width: 100%;
     z-index: 5001;
-    position: fixed;
+    position: fixed !important;
+}
+
+#contenido{
+    z-index: 2;
 }
 
 .menuseguimiento{
+    margin-top: 70px;
+    padding-top: 20px;
     position: fixed;
     width: 100%;
+    background-color: white;
+}
+
+.backgroundaux{
+    margin-top: 90px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
 }
 
 section{
@@ -249,14 +264,14 @@ section{
   height: 100%;
 }
 .footer{
+    z-index: 5002;
     width: 100%;
     height: 75px;
     background: #BBCC6D;
 }
 
-.footerseguimiento{
-    width: 100%;
-    height: 75px;
+#auxback{
+    padding-top: 70px;
 }
 
 #flexSeg{
@@ -269,7 +284,7 @@ section{
     position: fixed;
 }
 
-#background{
+.background{
     display:block;
     position: fixed;
     width: 100%;
@@ -388,6 +403,11 @@ strong{
     font-size: 24px;
     padding-top: 3%;
 }
+.patrocinador .header{
+        background-color: #99CDA8;
+    
+}
+
 @media(max-width:320px){
     .campoForm{
         width: 260px;
@@ -496,7 +516,7 @@ strong{
 .guardian .tituloAmigo{
     font-size: 60px;
 }
-
+/*
 @media(max-height:640px){
     #content{
         height: 500px;  
@@ -517,6 +537,7 @@ strong{
         height: 750px;
     }
 }
+*/
 .botones{
     display: flex;
     justify-content: center;
@@ -628,6 +649,7 @@ strong{
     width: 100%;
     background-color: white;
     text-align: center;
+    padding-top: 20%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .headerAnimales p{
