@@ -24,19 +24,19 @@
                 <br>
             </div>
             <div class="input_cont">
-                <form>
-                    <input type="text" placeholder="Nombre(s) y apellidos" required>
+                <form id="signup_form">
+                    <input id="nombre_signup" type="text" placeholder="Nombre(s) y apellidos" required>
                     <br>
-                    <input type="text" placeholder="Correo Electrónico" required>
+                    <input id="correo_signup" type="text" placeholder="Correo Electrónico" required>
                     <br>
-                    <input type="text" placeholder="Confirma Correo" required>
+                    <input id="correo_conf_signup" type="text" placeholder="Confirma Correo" required>
                     <br>
-                    <input class="contrasena" type="password" placeholder="Contraseña" required>
+                    <input id="contra_signup" class="contrasena" type="password" placeholder="Contraseña" required>
                     <!--<input type="submit" class="boton_contra">-->
                     <br>
-                    <input class="contrasena" type="password" placeholder="Confirma Contraseña" required>
+                    <input id="contra_conf_signup" class="contrasena" type="password" placeholder="Confirma Contraseña" required>
                     <br>
-                    <button type="submit" onclick="cambiarSeccion(19)">Iniciar</button>
+                    <button id="btn_signup" type="submit">Iniciar</button>
                     <br>
                 </form>
             </div>           
@@ -713,5 +713,6 @@
 
 </body>
 <script src="js/main.js"></script>
+<script src="js/usuarios.js"></script>
 
 </html>
