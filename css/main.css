@@ -235,7 +235,6 @@ body{
 .menuFooter{
     width: 100%;
     z-index: 5001;
-    position: fixed !important;
 }
 
 #contenido{
@@ -268,6 +267,8 @@ section{
     width: 100%;
     height: 75px;
     background: #BBCC6D;
+    position: fixed !important;
+
 }
 
 #auxback{
