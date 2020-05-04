@@ -148,7 +148,7 @@
             </div>
                       
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(3);">
+                <div class="btnAdquirir" id="pagoA" onclick="cambiarSeccion(3);">
                     <p>Aquí</p>
                 </div>
             </div>
@@ -235,7 +235,7 @@
             </div>
                       
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(6);">
+                <div class="btnAdquirir"  id="pagoP" onclick="cambiarSeccion(6);">
                     <p>Aquí</p>
                 </div>
             </div>
@@ -317,7 +317,7 @@
             </div>
                       
             <div class="contBtn">
-                <div class="btnAdquirir" onclick="cambiarSeccion(9)">
+                <div class="btnAdquirir" id="pagoG" onclick="cambiarSeccion(9)">
                     <p>Aquí</p>
                 </div>
             </div>
@@ -431,15 +431,15 @@
                 <br>
                 <br>
                 <div id="animales_usuario">
-                    <img src="img/manati_usuario.png">
+                    <div id="pagoMana"><img src="img/manati_usuario.png"></div>
                     <img src="img/separador.png">
-                    <img src="img/delfin_usuario.png">
+                    <div id="pagoDel"><img src="img/delfin_usuario.png"></div>
                     <img src="img/separador.png">
-                    <img src="img/nutria_usuario.png">
+                    <div id="pagoNut"><img src="img/nutria_usuario.png"></div>
                 </div>
                 <br>
                 <span>Usted es donador de tipo</span>
-                <h1>AMIGO</h1>
+                <div id="donadorTipo"><br><h2>Todavia no tienes ningún plan</h2><br></div>
                 <button type="button" onclick="cambiarSeccion(1)">Más información sobre mi plan</button>
                 <br>
                 <br>
@@ -714,5 +714,6 @@
 </body>
 <script src="js/main.js"></script>
 <script src="js/usuarios.js"></script>
+<script src="js/comprarPlanes.js"></script>
 
 </html>
