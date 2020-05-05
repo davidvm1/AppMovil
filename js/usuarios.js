@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var usuarios = [];
+
+    //Referencias Elementos Sign Up
     const nombre_apellido_input = document.getElementById("nombre_signup");
     const correo_input = document.getElementById("correo_signup");
     const correo_conf_input = document.getElementById("correo_conf_signup");
@@ -8,10 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const signup_form = document.getElementById("signup_form");
     const btn_signup = document.getElementById("btn_signup");
 
+    //Referencias Elementos Login
+    const login_form = document.getElementById("login_form");
+    const correo_login = document.getElementById("correo_login");
+    const contra_login = document.getElementById("contra_login");
+    const btn_login = document.getElementById("btn_login");
+
     function correoExiste(correo) {
         usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
-        var usuarios_filtados = usuarios.filter(usuario => usuario.correo === correo);
-        if (usuarios_filtados.length === 0) {
+        var usuarios_filtrados = usuarios.filter(usuario => usuario.correo === correo);
+        if (usuarios_filtrados.length === 0) {
+            return false;
+        }
+        return true;
+    }
+
+    function cuentaExiste(correo, contra){
+        usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
+        var usuarios_filtrados = usuarios.filter(usuario => usuario.correo === correo);
+        usuarios_filtrados = usuarios_filtrados.filter(usuario => usuario.contrasena === contra);
+        if (usuarios_filtrados.length === 0) {
             return false;
         }
         return true;
@@ -27,13 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     contrasena: contra_input.value
                 });
                 localStorage.setItem("usuarios", JSON.stringify(usuarios));
-                btn_signup.addEventListener('onclick',cambiarSeccion(19))
+                btn_signup.addEventListener('onclick',cambiarSeccion(19));
             }
         }
         event.preventDefault();
     }
 
     signup_form.addEventListener('submit', registrar);
+
+    function logear(event){
+        if(cuentaExiste(correo_login.value, contra_login.value) === true){
+            btn_login.addEventListener('onclick', cambiarSeccion(19));
+        }
+        event.preventDefault();
+    }
+
+    login_form.addEventListener('submit', logear);
 
 
 });
