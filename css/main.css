@@ -844,15 +844,15 @@ strong{
         padding: 60px 0px 0px 0px !important;
     }
 
+    #usuario .logo_cont{
+        padding-top: 10% !important;
+    }
+
     #usuario .logo_cont h1{
         font-size: 39px;
     }
 
-    #ampliar_cuenta{
-        position: absolute;
-        top: 286px;
-        left: 60px;   
-    }
+    
 
 
     /*clase para estilos de hipervinculos*/
