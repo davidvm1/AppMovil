@@ -184,6 +184,7 @@ function setDatos(){
 	document.getElementById("pnombre").value = nombreLocal;
 	document.getElementById("apellido").value = apellidosLocal;
 	document.getElementById("correo").value = correoLocal;
+	plnyAdop();
 }
 
 function guardarCambios(){
