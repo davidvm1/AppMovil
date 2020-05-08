@@ -158,6 +158,7 @@ function datosLocales(event){
 		correo = document.getElementById("correo_signup").value;
 		aux = correo;
 	}
+	setInfo(correo);
 }
 
 

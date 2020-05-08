@@ -54,6 +54,3 @@ function cambiarImagen(){
     }
    
 }
-function agregarPlan(plan){
-    
-}
