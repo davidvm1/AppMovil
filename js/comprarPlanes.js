@@ -26,7 +26,7 @@ function plnyAdop(){
     usuarios = JSON.parse(localStorage.getItem("usuarios"));
     var correoo = document.getElementById("correo").value;
     var usuarioFiltrado = usuarios.filter(usuario => usuario.correo === correoo);
-    if(!usuarioFiltrado[0].animales==null){
+    if(usuarioFiltrado[0].animales!=null){
         if(usuarioFiltrado[0].animales.includes('delfin')){
             pagoD.innerHTML="<img src='img/delfin_confirm.png'>";
             animalesUsuario[animalesUsuario.length+1]='delfin';
@@ -85,7 +85,7 @@ guardian.addEventListener('click',()=>{
         planes+="<h2 id='guarAdq'>GUARDIAN</h2><br>";
         donador.innerHTML= planes;
         agrPlanUsu('guardian');
-        console.log('hola');
+        
     }
 })
 function agrPlanUsu(plan){
@@ -95,7 +95,6 @@ function agrPlanUsu(plan){
             var correoo = document.getElementById("correo").value;
             var usuarioFiltrado = usuarios.filter(usuario => usuario.correo === correoo);
             usuarioFiltrado[0].planes=planesUsuario;
-            console.log(planesUsuario)
             localStorage.setItem("usuarios", JSON.stringify(usuarios));
         }
     }
@@ -107,7 +106,6 @@ function agrAnimUsu(animal){
             var correoo = document.getElementById("correo").value;
             var usuarioFiltrado = usuarios.filter(usuario => usuario.correo === correoo);
             usuarioFiltrado[0].animales=animalesUsuario;
-            console.log(animalesUsuario)
             localStorage.setItem("usuarios", JSON.stringify(usuarios));
         }
     }
