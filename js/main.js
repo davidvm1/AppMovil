@@ -3,6 +3,12 @@ var parrafo = [];
 var titulos = [];
 var imagen;
 var tiempo_splash = 2600;
+var usuarioLocal = "";
+var correoLocal = "";
+var contraLocal = "";
+var nombreLocal = "";
+var nombreCLocal = "";
+var apellidosLocal = "";
 window.onload = function() {
 	inicializarReferencias();
 	cambiarSeccion(22);
@@ -118,7 +124,6 @@ function cambiarSeccion(id_seccion) {
 	for (var i in secciones) {
 		secciones[i].classList.add('oculto');
 	}
-
 	secciones[id_seccion].classList.add('animated');
 	secciones[id_seccion].classList.add('fadeIn');
 	secciones[id_seccion].classList.remove('oculto');
@@ -142,3 +147,94 @@ function pagoDeclinado(){
 		"Inténtalo más tarde.";
 	}
 }
+
+function datosLocales(event){
+	var correo = "";
+	var aux = "";
+	if(event == "btn_login"){
+		correo = document.getElementById("correo_login").value;
+	}
+	else if(event == "btn_signup"){
+		correo = document.getElementById("correo_signup").value;
+		aux = correo;
+	}
+}
+
+
+function setInfo(correo){
+	var corr = correo;
+	usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
+	var usuarios_filtrados = usuarios.filter(usuario => usuario.correo === corr);
+	this.correoLocal = usuarios_filtrados[0].correo;
+	this.contraLocal = usuarios_filtrados[0].contrasena;
+	this.nombreLocal = usuarios_filtrados[0].nombre_y_apellido;
+	this.nombreCLocal = nombreLocal;
+	var nombre = nombreLocal.split(" ");
+	for(var i = 0; i < nombre.length;i++){
+		if(i==0){
+			nombreLocal=nombre[i];
+		}else apellidosLocal += nombre[i]+" ";
+	}
+	setDatos();
+}
+
+function setDatos(){
+	document.getElementById("nombrePerf").innerHTML=nombreCLocal;
+	document.getElementById("pnombre").value = nombreLocal;
+	document.getElementById("apellido").value = apellidosLocal;
+	document.getElementById("correo").value = correoLocal;
+}
+
+function guardarCambios(){
+	var corr = document.getElementById("correo").value;
+	var contra = document.getElementById("contra").value;
+	var contraNueva = document.getElementById("nuevacontra").value;
+	var nombre = document.getElementById("pnombre").value;
+	var apeshidos = document.getElementById("apellido").value;
+	var nombrenuevo = nombre+" "+apeshidos;
+	usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
+	var usuarios_filtrados = usuarios.filter(usuario => usuario.correo === corr);
+	if(contra==usuarios_filtrados[0].contrasena){
+		for(var i in usuarios){
+			if(usuarios[i].correo==corr){
+				if(contraNueva!=usuarios[i].contrasena){
+					usuarios[i].nombre_y_apellido = nombrenuevo;
+					usuarios[i].contrasena = contraNueva;
+					localStorage.setItem("usuarios", JSON.stringify(usuarios));
+					alert("Contra cambiada");
+					document.getElementById("contra").value = "";
+					document.getElementById("nuevacontra").value = "";
+					cambiarSeccion(19);
+				}
+				else {
+					alert("La contraseña debe ser diferente a la actual");
+					cambiarSeccion(19);
+				}
+			}
+		}
+	}
+	else{
+		alert("La contraseña actual no coincide");
+	}
+}
+
+function seleccionarImg(){
+	document.getElementById('perfilImagen').click();
+}
+
+function handleFiles(){
+	var fakepath = document.getElementById('perfilImagen').value;
+	var path = fakepath.split("\\");
+	var imagen = document.getElementById("foto_perfil");
+	var imgmin = document.getElementById("foto_perfil_menor");
+	imagen.src="img/fotosperfil/"+path[2];
+	imagen.style.height = "115px";
+	imagen.style.width = "115px";
+	imagen.style.setProperty("border-radius","50%", "important");
+	imgmin.src="img/fotosperfil/"+path[2];
+	imgmin.style.height = "115px";
+	imgmin.style.width = "115px";
+	imgmin.style.borderRadius = "50%";
+}
+
+

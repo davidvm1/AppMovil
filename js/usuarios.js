@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var usuarios = [];
+    
 
     //Referencias Elementos Sign Up
     const nombre_apellido_input = document.getElementById("nombre_signup");
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const correo_login = document.getElementById("correo_login");
     const contra_login = document.getElementById("contra_login");
     const btn_login = document.getElementById("btn_login");
+
+    //Referencias Eche
+    const prueba = document.getElementById("prueba1");
 
     function correoExiste(correo) {
         usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
@@ -42,7 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 usuarios.push({
                     nombre_y_apellido: nombre_apellido_input.value,
                     correo: correo_input.value,
-                    contrasena: contra_input.value
+                    contrasena: contra_input.value,
+                    fotoperfil: "img/foto_perfil.png"
                 });
                 localStorage.setItem("usuarios", JSON.stringify(usuarios));
                 btn_signup.addEventListener('onclick',cambiarSeccion(19));
@@ -61,6 +66,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     login_form.addEventListener('submit', logear);
-
 
 });

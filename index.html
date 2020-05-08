@@ -36,7 +36,7 @@
                     <br>
                     <input id="contra_conf_signup" class="contrasena" type="password" placeholder="Confirma Contraseña" required>
                     <br>
-                    <button id="btn_signup" type="submit">Iniciar</button>
+                    <button id="btn_signup" type="submit" onclick="datosLocales(this.id)">Iniciar</button>
                     <br>
                 </form>
             </div>           
@@ -55,7 +55,7 @@
                     <br>
                     <p>¿Olvidaste tu contraseña? <span onclick="cambiarSeccion(15)">Click aquí</span></p>
                     <p>¿Todavía no tienes una cuenta? <span onclick="cambiarSeccion(13)">Crear una cuenta</span></p>
-                    <button id="btn_login" type="submit">Iniciar</button>
+                    <button id="btn_login" type="submit" onclick="datosLocales(this.id)">Iniciar</button>
                 </form>
 
             </div>
@@ -420,8 +420,9 @@
             <div class="logo_cont">
                 <img src="img/foto_perfil.png" alt="foto_perfil" id="foto_perfil">
                 <br>
-                <span>Cambiar foto</span>
-                <h1>Pepe Martinez</h1>
+                <input type="file" accept=".jpg,.png" name="images" id="perfilImagen" onClick="seleccionarImg()" style="display:none" onchange="handleFiles(this.files)"/>
+                <span onClick="seleccionarImg()">Cambiar foto</span>
+                <h1 id="nombrePerf">Pepe Martinez</h1>
                 <br>
                 <a href="#" class="hipervinculo" id="ampliar_cuenta" onclick="cambiarSeccion(18)">Ampliar información de mi cuenta</a>
             </div>
@@ -473,12 +474,12 @@
                     <label for="contra">Cambiar contraseña</label><br>
                     <input class="contrasena" id="contra" type="password" placeholder="Contraseña actual" required>
                     <br>
-                    <input class="contrasena" type="password" placeholder="Nueva contraseña" required>
+                    <input id="nuevacontra" class="contrasena" type="password" placeholder="Nueva contraseña" required>
                     <br>
                     <label for="fecha">Fecha de Nacimiento</label><br>
                     <input id="fecha" type="date" placeholder="Fecha" required>
                     <br>
-                    <button type="submit">Guardar cambios</button>
+                    <button onclick="guardarCambios()">Guardar cambios</button>
     
                 </form>
             </div>
