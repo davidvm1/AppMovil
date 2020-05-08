@@ -128,24 +128,34 @@ function cambiarSeccion(id_seccion) {
 	secciones[id_seccion].classList.add('fadeIn');
 	secciones[id_seccion].classList.remove('oculto');
 }
-function pagoAceptado(){
+function pagoAceptado(p){
 	var pago=document.getElementsByClassName("gracias");
-	console.log(pago);
+	var nombre = document.getElementById("pnombre").value;
+	var apeshidos = document.getElementById("apellido").value;
 	pago.textContent='';
 	for(var i in pago){
-		pago[i].innerHTML="¡Gracias Pepe Martínez!<br>"+
+		pago[i].innerHTML="¡Gracias "+nombre+" "+apeshidos+"!<br>"+
 		"Con tu apoyo ayudas a<br> la conservación de<br> estas maravillosas<br> especies";
+	}
+	if(p=="a"){
+		cambiarSeccion(3);
+	}
+	else if(p=="b"){
+		cambiarSeccion(6);
+	}
+	else if(p=="c"){
+		cambiarSeccion(9);
 	}
 }
 function pagoDeclinado(){
 	var pago=document.getElementsByClassName("gracias");
-	console.log(pago);
 	pago.textContent='';
 	for(var i in pago){
-		pago[i].innerHTML="Lo sentimos, Pepe Martínez "+
+		pago[i].innerHTML="Lo sentimos, "+nombre+" "+apeshidos+""+
 		"Ha ocurrido un error en el proceso de pago."+ 
 		"Inténtalo más tarde.";
 	}
+	
 }
 
 function datosLocales(event){
