@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn_signup.addEventListener('onclick',cambiarSeccion(19));
             }
         }
+        else {
+            swal("Error","El correo o contraseña ingresados no concuerdan.", "error");
+        }
         event.preventDefault();
     }
 
@@ -61,6 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function logear(event){
         if(cuentaExiste(correo_login.value, contra_login.value) === true){
             btn_login.addEventListener('onclick', cambiarSeccion(19));
+        }
+        else {
+            swal("Error","El correo ingresado no existe o la contraseña es incorrecta.", "error");
         }
         event.preventDefault();
     }
