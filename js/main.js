@@ -223,20 +223,20 @@ function guardarCambios(){
 					usuarios[i].nombre_y_apellido = nombrenuevo;
 					usuarios[i].contrasena = contraNueva;
 					localStorage.setItem("usuarios", JSON.stringify(usuarios));
-					alert("Contra cambiada");
+					swal("Confirmación","Contraseña cambiada.", "success");
 					document.getElementById("contra").value = "";
 					document.getElementById("nuevacontra").value = "";
 					cambiarSeccion(19);
 				}
 				else {
-					alert("La contraseña debe ser diferente a la actual");
+					swal("Error","La contraseña debe ser diferente a la actual.", "error");
 					cambiarSeccion(19);
 				}
 			}
 		}
 	}
 	else{
-		alert("La contraseña actual no coincide");
+		swal("Error","La contraseña actual no coincide", "error");
 	}
 }
 
