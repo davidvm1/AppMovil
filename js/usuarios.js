@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     fotoperfil: "img/foto_perfil.png"
                 });
                 localStorage.setItem("usuarios", JSON.stringify(usuarios));
-                btn_signup.addEventListener('onclick',cambiarSeccion(23));
+                btn_signup.addEventListener('onclick',onclicksingup());
             }
         }
         else {
@@ -71,6 +71,21 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
     }
 
+    function onclicksingup(){
+        var nombrelocal=nombre_apellido_input.value;
+        var nombre = nombre_apellido_input.value.split(" ");
+        var apellido = nombre_apellido_input.value.split(" ");
+        var apellidos = "";
+        for(var i = 0; i < apellido.length;i++){
+            if(i==0){
+                
+            }else apellidos += apellido[i]+" ";
+        }
+        document.getElementById("nombrePerf").innerHTML=nombrelocal;
+        document.getElementById("correo").value=correo_input.value;
+        document.getElementById("pnombre").value=nombre[0];
+        document.getElementById("apellido").value=apellidos;
+        cambiarSeccion(23);
+    }
     login_form.addEventListener('submit', logear);
-
 });
