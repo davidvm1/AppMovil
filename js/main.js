@@ -133,9 +133,11 @@ function cambiarSplash() {
 function cambiarSeccion(id_seccion) {
 	for (var i in secciones) {
 		secciones[i].classList.add('oculto');
+		
+
 	}
 	secciones[id_seccion].classList.add('animated');
-	secciones[id_seccion].classList.add('fadeIn');
+	secciones[id_seccion].classList.add('fadeInDown');
 	secciones[id_seccion].classList.remove('oculto');
 }
 function pagoAceptado(p){
@@ -204,6 +206,13 @@ function setDatos(){
 	document.getElementById("pnombre").value = nombreLocal;
 	document.getElementById("apellido").value = apellidosLocal;
 	document.getElementById("correo").value = correoLocal;
+	var data=document.getElementsByClassName("datos");
+	var fecha= new Date();
+	var dataP=" "+nombreLocal+" "+apellidosLocal+" <br>"+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getUTCFullYear()+"<br>"+correoLocal;
+	for(i in data){
+		data[i].innerHTML="";
+		data[i].innerHTML=dataP;
+	}
 	plnyAdop();
 }
 

@@ -85,6 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("correo").value=correo_input.value;
         document.getElementById("pnombre").value=nombre[0];
         document.getElementById("apellido").value=apellidos;
+        var data=document.getElementsByClassName("datos");
+        var fecha= new Date();
+        var dataP=" "+nombrelocal+" "+apellidos+" <br>"+fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getUTCFullYear()+"<br>"+correo_input.value;
+        for(i in data){
+            data[i].innerHTML="";
+            data[i].innerHTML=dataP;
+        }
         cambiarSeccion(23);
     }
     login_form.addEventListener('submit', logear);
