@@ -137,7 +137,7 @@ function cambiarSeccion(id_seccion) {
 
 	}
 	secciones[id_seccion].classList.add('animated');
-	secciones[id_seccion].classList.add('fadeInDown');
+	secciones[id_seccion].classList.add('fadeIn');
 	secciones[id_seccion].classList.remove('oculto');
 }
 function pagoAceptado(p){
