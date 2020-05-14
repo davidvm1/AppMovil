@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     fotoperfil: "img/foto_perfil.png"
                 });
                 localStorage.setItem("usuarios", JSON.stringify(usuarios));
-                btn_signup.addEventListener('onclick',cambiarSeccion(19));
+                btn_signup.addEventListener('onclick',cambiarSeccion(23));
             }
         }
         else {
