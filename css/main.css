@@ -219,6 +219,108 @@ body{
     width: 90px;
 }
 
+.imgTest{
+    position: absolute;
+    top: 50px;
+}
+
+.textoTest{
+    font-family: Roboto;
+    position: relative;
+    top: 370px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.primeraPregunta{
+    position: absolute;
+    top: 430px;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background: #BBCC6D;
+    border: none;
+    font-size: 14px;
+}
+
+.back{
+    position: absolute;
+    left: 85%;
+    margin-top: 15px;
+}
+
+.segundaPregunta{
+    position: absolute;
+    top: 490px;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background: #BBCC6D;
+    border: none;
+    font-size: 14px;
+}
+
+#texto2{
+    
+    font-size: 17px;
+}
+
+.terceraPregunta{
+    position: absolute;
+    top: 550px;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background: #BBCC6D;
+    border: none;
+    font-size: 14px;
+}
+
+#saltarTest{
+    position: absolute;
+    top: 610px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    background: white;
+    font-family: Roboto;
+    color: #83B692;
+    font-size: 20px;
+}
+
+.textoCompatible{
+    position: absolute;
+    top: 100px;
+    font-family: Roboto;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.imgCompatible{
+    position: absolute;
+    top: 140px;
+}
+
+.animalCompatible{
+    position: absolute;
+    top: 430px;
+    font-family: Roboto;
+    font-size: 50px;
+    color: #956D4F;
+}
+
+.descripcionCompatible{
+    position: absolute;
+    top: 500px;
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 16px;
+}
+
 /*-----------*/
 
 .header{
@@ -268,6 +370,7 @@ section{
     height: 75px;
     background: #BBCC6D;
     position: fixed !important;
+    top: 0px;
 
 }
 

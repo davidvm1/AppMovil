@@ -36,11 +36,123 @@
                     <br>
                     <input id="contra_conf_signup" class="contrasena" type="password" placeholder="Confirma Contraseña" required>
                     <br>
-                    <button id="btn_signup" type="submit" onclick="datosLocales(this.id)">Iniciar</button>
+                    <button id="btn_signup" type="submit" onclick="cambiarSeccion(23)">Iniciar</button>
                     <br>
                 </form>
             </div>           
         </section>
+        <!--Pregunta1-->
+        <section id="test1">
+            <img src="img/pregunta1.png" class="imgTest">
+            <p class="textoTest">Te consideras una persona</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(24)">Seductora y Audaz</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(24)">Tímida y Tranquila</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(24)">Amigable y Juguetona</button>
+            <button id="saltarTest" onclick="cambiarSeccion(19)">Saltar Test</button>
+        </section>
+        <!--Pregunta2-->
+        <section id="test2">
+            <img class="back" src="img/btn%20atras.png">
+            <img src="img/pregunta2.png" class="imgTest">
+            <p class="textoTest" id="texto2">¿Cuál de tus sentidos es el más agudo?</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(25)">Oído</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(25)">Olfato</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(25)">Vista</button>
+        </section>
+        <!--Pregunta3-->
+        <section id="test3">
+           <img class="back" src="img/btn%20atras.png">
+            <img src="img/pregunta3.png" class="imgTest">
+            <p class="textoTest">Eres una persona</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(26)">Enérgica</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(26)">Perezosa</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(26)">Relajada</button>
+        </section>
+        <!--Pregunta4-->
+        <section id="test4">
+           <img class="back" src="img/btn%20atras.png">
+            <img src="img/pregunta4.png" class="imgTest">
+            <p class="textoTest">¿Cuál es tu clima favorito?</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(27)">Frío</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(27)">Cálido</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(27)">Templado</button>
+        </section>
+        <!--Pregunta5-->
+        <section id="test5">
+           <img class="back" src="img/btn%20atras.png">
+            <img src="img/pregunta5.png" class="imgTest">
+            <p class="textoTest">Escoge una forma de nado</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(28)">Estilo Espalda</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(28)">Estilo Mariposa</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(28)">Estilo Braza</button>
+        </section>
+        <!--Pregunta6-->
+        <section id="test6">
+           <img class="back" src="img/btn%20atras.png">
+            <img src="img/pregunta6.png" class="imgTest">
+            <p class="textoTest">Prefieres hacer actividades</p>
+            <button class="primeraPregunta" onclick="cambiarSeccion(29)">De día</button>
+            <button class="segundaPregunta" onclick="cambiarSeccion(30)">De noche</button>
+            <button class="terceraPregunta" onclick="cambiarSeccion(31)">Ambos</button>
+        </section>
+        
+        <!--Resultado1-->
+        <section id="resultado1">
+           <div class="menuFooter">
+                <div class="footer">
+                    <input type="image" src="img/Grupo%20165-blanco.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario.png" class="logoUsuarioInicio" onclick="cambiarSeccion(17)">
+                </div>
+            </div>
+    
+            <p class="textoCompatible">Eres compatible con: </p>
+
+            <img src="img/nutriablanco.png" class="imgCompatible">
+            
+            <p class="animalCompatible">Nutria</p>
+            
+            <p class="descripcionCompatible">Eres una persona muy enérgica, te gusta estar activo y descubrir nuevas cosas. Tu compañero ideal es la nutria.</p>
+        </section>
+        
+        <!--Resultado2-->
+        <section id="resultado2">
+           <div class="menuFooter">
+                <div class="footer">
+                    <input type="image" src="img/Grupo%20165-blanco.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario.png" class="logoUsuarioInicio" onclick="cambiarSeccion(17)">
+                </div>
+            </div>
+    
+            <p class="textoCompatible">Eres compatible con: </p>
+
+            <img src="img/manati2.png" class="imgCompatible">
+            
+            <p class="animalCompatible">Manatí</p>
+            
+            <p class="descripcionCompatible">Eres una persona tranquila y te gusta tomarte las cosas con calma, tu naturaleza es amable y tu compañero ideal sería un manatí</p>
+        </section>
+        
+        <!--Resultado3-->
+        <section id="resultado3">
+           <div class="menuFooter">
+                <div class="footer">
+                    <input type="image" src="img/Grupo%20165-blanco.png" class="logoMenuInicio" onclick="cambiarSeccion(19)">
+                    <input type="image" src="img/mapa.png" class="logoMapaInicio" onclick="cambiarSeccion(21)">
+                    <input type="image" src="img/usuario.png" class="logoUsuarioInicio" onclick="cambiarSeccion(17)">
+                </div>
+            </div>
+    
+            <p class="textoCompatible">Eres compatible con: </p>
+
+            <img src="img/delfin2.png" class="imgCompatible">
+            
+            <p class="animalCompatible">Delfín</p>
+            
+            <p class="descripcionCompatible">Eres una persona muy inteligente que se caracteriza por su gran capadidad de agradar a todos, tu compañeros es el delfín.</p>
+        </section>
+        
         <!--Login-->
         <section id="login" >
             <div class="logo_cont">

@@ -44,8 +44,17 @@ function inicializarReferencias() {
 	//Eche
 	secciones[21]=document.getElementById('seguimSeccion');
 	secciones[22] = document.getElementById('splash');
-	
-
+	//Franco
+    secciones[23]=document.getElementById('test1');
+    secciones[24]=document.getElementById('test2');
+    secciones[25]=document.getElementById('test3');
+    secciones[26]=document.getElementById('test4');
+    secciones[27]=document.getElementById('test5');
+    secciones[28]=document.getElementById('test6');
+    secciones[29]=document.getElementById('resultado1');
+    secciones[30]=document.getElementById('resultado2');
+    secciones[31]=document.getElementById('resultado3');
+    
 	//Eche
 	parrafo[1] = document.getElementById('parrafo1');
 	parrafo[2] = document.getElementById('parrafo2');
